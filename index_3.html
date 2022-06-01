@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Site RC</title>
+        <link rel="stylesheet" href="CSS/CSS.css"/>
+        <link rel="stylesheet" href="CSS/Menu.css"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="btn">
+                <span class="fas fa-bars">
+                </span>
+            </div>
+            <nav class="Barre">
+                <div class="text">Menu</div>
+                <ul>
+                    <li>
+                        <a href="index.html" title="Page_2" target="_BLANK">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#" class="feat-btn" title="Voiture">
+                            Tout-Terrain 2WD
+                            <span class="fas fa-caret-down first"></span>
+                        </a>
+                        <ul class="feat-show">
+                            <li>
+                                <a href="#Voiture_1" title="Cougar Laydown">Cougar Laydown</a>
+                                <a href="#Voiture_2" title="Cougar KF">Cougar KF</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index_4.html" title="Page_4" target="_BLANK">Crawler</a>
+                    </li>
+                </ul>
+            </nav>
+            <script>
+              $('.btn').click(function(){
+                 $(this).toggleClass("click");
+                 $('.Barre').toggleClass("show");
+              });
+              $('.feat-btn').click(function(){
+                $('nav ul .feat-show').toggleClass("show");
+                $('nav ul .first').toggleClass("rotate");
+              });
+              $('nav ul li').click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+              });
+            </script>
+        </header><br />
+        <hr class="hr_Header" /><br />
+        <div id="Voiture_1">
+            <p>Echelle 1/10</p>
+            <h5>Schumacher Cougar Laydown</h5>
+            <img class="Image_centre" src="https://eos.redrc.net/wp-content/uploads/2018/03/orl_CF1.jpg" alt="Cougar Laydown" width="500" height="300"/>
+            <h6>
+                Le Cougar Laydown est le buggy ultime pour les courses off-road 2WD. Il est rapide, léger, et dispose désormais d'un centre de gravité bas pour une meilleure vitesse en virage.<br />
+                Moteur : LRP X22 7.5T Sensored.<br />
+                Variateur : Skyrc toro TS120 Sensored.<br />
+                Servo : Savox.
+            </h6>
+        </div>
+        <hr />
+        <div id="Voiture_2">
+            <h5>Schumacher Cougar KF</h5>
+            <img class="Image_centre" src="https://eos.redrc.net/wp-content/uploads/2015/03/Orl_CF1.jpg" alt="Cougar KF" width="500" height="300"/>
+            <h6>
+                Le Schumacher Cougar KF est un buggy à moteur central à 2 roues motrices, entraÎné par courroie, son design innovant offre une excellente adhérence sur différents types de pistes.<br />
+                Moteur : LRP vector K4 6.5T Sensored<br />
+                Variateur : LRP Flow<br />
+                Servo : Savox.
+            </h6>
+        </div>
+        <footer>
+            <p class="Bas_page">
+                <a href="index_6.html" title="Anciennes voitures" target="_BLANK">Voitures possédées</a>
+            </p>
+            <p>© KLS</p>
+        </footer>
+    </body>
+</html>

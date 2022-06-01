@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Site RC</title>
+        <link rel="stylesheet" href="CSS/CSS.css"/>
+        <link rel="stylesheet" href="CSS/Menu.css"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="btn">
+                <span class="fas fa-bars">
+                </span>
+            </div>
+            <nav class="Barre">
+                <div class="text">Menu</div>
+                <ul>
+                    <li>
+                        <a href="index.html" title="Accueil" target="_BLANK">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#" class="feat-btn" title="Voiture">
+                            Tout-Terrain
+                            <span class="fas fa-caret-down first"></span>
+                        </a>
+                        <ul class="feat-show">
+                            <li>
+                                <a href="#Voiture_1" title="XMAXX">XMAXX</a>
+                                <a href="#Voiture_2" title="Super Rock Rey">Super Rock Rey</a>
+                                <a href="#Voiture_3" title="Mojave">Mojave</a>
+                                <a href="#Voiture_4" title="Scorpion">Scorpion</a>
+                                <a href="#Voiture_5" title="Kraton">Kraton</a>
+                                <a href="#Voiture_6" title="Maxx V2">MAXX V2</a>
+                                <a href="#Voiture_7" title="Stampede">Stampede</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index_3.html" title="Page_3" target="_BLANK">Tout-terrain 2WD</a>
+                    </li>
+                </ul>
+            </nav>
+            <script>
+              $('.btn').click(function(){
+                 $(this).toggleClass("click");
+                 $('.Barre').toggleClass("show");
+              });
+              $('.feat-btn').click(function(){
+                $('nav ul .feat-show').toggleClass("show");
+                $('nav ul .first').toggleClass("rotate");
+              });
+              $('nav ul li').click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+              });
+            </script>
+        </header><br />
+        <hr class="hr_Header" /><br />
+        <div id="Voiture_1">
+            <p>Echelle 1/5</p>
+            <h5>Traxxas XMAXX</h5><br />
+            <img class="Image_Droite" src="https://www.miniplanes.fr/images/products/448350/x_maxx-brushless-tsm-15-trx77086_4_grnx-12.png" alt="Traxxas XMAXX" width="600" height="300"/>
+            <img class="Image_Gauche" src="https://i.ytimg.com/vi/D4P0935cNyA/maxresdefault.jpg" alt="Traxxas XMAXX" width="600" height="300"/>
+            <h6>
+                Le XMAXX est le 4x4 le plus puissant et solide qui existe, sa taille gigantesque et son innovation technique font de cette voiture le Monster Truck par excellence.<br />
+                Moteur : Hobbywing 5687 1100kv<br />
+                Variateur : Hobbywing MAX5 200A<br />
+                Pneus : Louise MT Pioneer<br />
+                Servo : Origine avec pignons métal<br />
+                Options diverses :
+                <ul>
+                    <li>Carroserie incassable TMT bodies.</li>
+                    <li>Transmission par courroie.</li>
+                    <li>Triangles renforcés.</li>
+                </ul>
+            </h6>
+        </div>
+        <hr />
+        <div id="Voiture_2">
+            <p>Echelle 1/6</p>
+            <h5>Losi Super Rock Rey</h5><br />
+            <img class="Image_centre" src="https://www.jetmodel.it/wp-content/uploads/2018/10/LOS05016T2_a22.jpg" alt="Losi super rock rey" width="600" height="375"/>
+            <h6>
+                Les performances réalistes d'un essieu solide sont associées à une puissance brushless 8S qui pousse la vitesse à plus de 80 km/h, tandis que la stabilité vous permet de tout donner dans les virages et les sauts.<br />
+                Moteur : Dynamite 750kv<br />
+                Variateur : Dynamite Fuze 160A 8S<br />
+                Servo : Origine<br />
+            </h6>
+        </div>
+        <hr />
+        <div id="Voiture_3">
+            <p>Echelle 1/7</p>
+            <h5>Arrma Mojave EXB</h5><br />
+            <img class="Image_D" src="https://blog.arrma-rc.com/wp-content/uploads/2020/11/1920x1200-MOJAVE-EXB-Roller-1.jpg" alt="Arrma Mojave" width="630" height="390"/>
+            <img class="Image_G" src="https://static.mwmwarbirds.co.uk/uploads/2020/05/arrma-Mojave-6s-blk-red-2.jpg" alt="Arrma Mojave" width="630" height="390"/><br />
+            <img class="Image_centre" src="https://i.ytimg.com/vi/y9SDXVP7n9g/maxresdefault.jpg" alt="Arrma Mojave" width="650" height="390"/>
+            <h6>
+                Conçu pour être à la fois rapide et robuste, il est capable de performances extrêmes dès réception, qu'il s'agisse de bondir sur des dunes de sable ou de rouler sur des trottoirs en béton.<br />
+                Moteur : Origine du Cen Reeper 1450kv.<br />
+                Variateur : Hobbywing Max 6 160A.<br />
+                Servo : JX 20kg
+            </h6>
+        </div>
+        <hr />
+        <div id="Voiture_4">
+            <h5>Kyosho Scorpion</h5><br />
+            <img class="Image_centre" src="IMAGES/Scorpion.jpg" alt="Kyosho Scorpion" width="580" height="300"/>
+            <h6>
+                Le Scorpion XXL VE est particulièrement robuste et offre des conditions préalables idéales pour des sessions de bash délirantes ou pour des courses effrénées sur piste.<br />
+                Moteur : SSS 4082 1650kv.<br />
+                Variateur : Traxxas VXL-8S.<br />
+                Pneus : Roapex MT Renegade.<br />
+                Servo : Power HD 21 kg.<br />
+                Options diverses :
+                <ul>
+                    <li>Couronne transmission en acier.</li>
+                    <li>Cardans homocinétiques.</li>
+                    <li>Amortisseurs de Arrma Kraton.</li>
+                    <li>Pare-choc avant RPM.</li>
+                    <li>Pare-choc arrière T-Bone-Racing.</li>
+                    <li>Plaque support variateur en carbone.</li>
+                    <li>Différentiel de Cen Reeper.</li>
+                    <li>Aileron arrière FG Marder.</li>
+                </ul>
+            </h6>
+        </div>
+        <hr />
+        <div id="Voiture_5">
+            <p>Echelle 1/8</p>
+            <h5>Arrma Kraton EXB</h5><br />
+            <img class="Image_centre" src="https://blog.arrma-rc.com/wp-content/uploads/2020/11/1920x1080-KRATON-EXB-Roller-3.jpg" alt="Arrma Kraton" width="550" height="330"/>
+            <h6>
+                Ce monster truck ajoute une résistance supplémentaire partout où cela est important, faisant de ce châssis à l'échelle 1/8 la plateforme parfaite pour du bashing à grande vitesse sur des terrains exigeants<br />
+                Moteur : Konect 1900kv<br />
+                Variateur : Konect 150A 6S<br />
+                Servo : Arrma 15kg
+            </h6>
+        </div>
+        <hr />
+        <div id="Voiture_6">
+            <p>Echelle 1/10</p>
+            <h5>Traxxas MAXX V2</h5><br />
+            <img class="Image_D2" src="https://www.campbelltownhobbies.com.au/assets/alt_3/39-89076-4REd.jpg?20210309055646" alt="Traxxas MAXX V2" width="550" height="350"/>
+            <img class="Image_G2" src="https://blog.rcmart.com/wp-content/uploads/2019/09/rcmart-blog-Traxxas-Maxx-110th-4WD-Monster-Truck-New-Version-More-Powerful-More-Fun-89076-4-8.jpg" alt="Traxxas MAXX V2" width="550" height="350"/><br />
+            <iframe allowfullscreen="" height="320" src="https://www.youtube.com/embed/r1l0Y2E1cfU" width="560"></iframe>
+            <h6>
+                Le MAXX V2 est conçu pour résister aux punitions extrêmes et à la conduite intense<br />
+                Moteur : SSS 4082 1650kv<br />
+                Variateur : Hobbywing max 8 150A<br />
+                Pneus : Proline Badlands<br />
+                Options diverses :
+                <ul>
+                    <li>Triangles renforcés bleus.</li>
+                </ul>
+            </h6>
+        </div>
+        <hr />
+        <div id="Voiture_7">
+            <h5>Traxxas Stampede 4x2</h5><br />
+            <img class="Image_centre" src="https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/11087/22419/TRA36076-4-GRN_2__31798.1559750180.jpg" alt="Traxxas Stampede" width="600" height="290"/>
+            <h6>
+                Penser pour délivrer le meilleur compromis entre faire chauffer les pneus, obtenir une vitesse de pointe très élevée et un temps de réponse des gaz qui soit précis.<br />
+                Moteur : Castle 3800kv<br />
+                Variateur : Hobbywing WP-SC8 120A<br />
+                Carroserie : Proline Ford F-150 Raptor 2017<br />
+                Pneus : Louise RC Mt-Rocket<br />
+                Options diverses :
+                <ul>
+                    <li>Triangles renforcés bleus, Pare-choc avant bleu, Ressort amortisseurs bleus, Support moteur bleu, Cache couronne pignon bleu</li>
+                    <li>Bouchons amortisseurs alu Traxxas bleu</li>
+                    <li>Traxxas Wheelie Bar Bleu</li>
+                    <li>Roues alu barre wheeling bleu</li>
+                </ul><br />
+            </h6>
+        </div>
+        <table>
+            <caption>Rapport Couronne Pignon</caption>
+            <tr>
+                <th>Voiture</th>
+                <th>Couronne</th>
+                <th>Pignon</th>
+            </tr>
+            <tr>
+                <th scope="row">XMAXX</th>
+                <td colspan="2" class="Grey">[N/A]</td>
+            </tr>
+            <tr>
+                <th scope="row">Super Rock Rey</th>
+                <td class="Blue"></td>
+                <td class="Red"></td>
+            </tr>
+            <tr>
+                <th scope="row">Mojave</th>
+                <td class="Blue">50</td>
+                <td class="Red">14</td>
+            </tr>
+            <tr>
+                <th scope="row">Scorpion</th>
+                <td class="Blue">63</td>
+                <td class="Red">12</td>
+            </tr>
+            <tr>
+                <th scope="row">Kraton</th>
+                <td class="Blue">50</td>
+                <td class="Red">14</td>
+            </tr>
+            <tr>
+                <th scope="row">Stampede</th>
+                <td class="Blue">83</td>
+                <td class="Red">20</td>
+            </tr>
+            <tr>
+                <th scope="row">Cougar Laydown</th>
+                <td class="Blue">71</td>
+                <td class="Red">22</td>
+            </tr>
+            <tr>
+                <th scope="row">Cougar KF</th>
+                <td class="Blue"></td>
+                <td class="Red"></td>
+            </tr>
+            <tr>
+                <th scope="row">TRX-4</th>
+                <td class="Blue">45</td>
+                <td class="Red">11</td>
+            </tr>
+        </table>
+        <footer>
+            <p class="Bas_page">
+                <a href="index_6.html" title="Anciennes voitures" target="_BLANK">Voitures possédées</a>
+            </p>
+            <p>© KLS</p>
+        </footer>
+    </body>
+</html>
