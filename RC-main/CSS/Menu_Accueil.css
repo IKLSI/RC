@@ -1,0 +1,138 @@
+/* Menu page Accueil index */
+
+header {
+    border-color: blue;
+    border-bottom: 1px solid #eee;
+}
+
+header li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    color: white;
+    background-color: black;
+}
+
+header li a {
+    display: block;
+    padding: 20px;
+}
+
+header li a:hover {
+    color: cyan;
+    background-color: #1a1a1a;
+     border: 1px solid darkorange;
+}
+
+header li:hover .Sous-menu {
+    display: block;
+}
+
+header li:hover .Sous-menu_1 {
+    display: block;
+}
+
+header li:hover .Sous-menu_2 {
+    display: block;
+}
+
+header li:hover .Sous-menu_3 {
+    display: block;
+}
+
+.Sous-menu {
+    display: none;
+    position: absolute;
+    width: 137px;
+    background-color: black;
+}
+
+.Sous-menu_1 {
+    display: none;
+    position: absolute;
+    width: 177px;
+    background-color: black;
+}
+
+.Sous-menu_2 {
+    display: none;
+    position: absolute;
+    width: 110px;
+    background-color: black;
+}
+
+.Sous-menu_3 {
+    display: none;
+    position: absolute;
+    width: 118px;
+    background-color: black;
+}
+
+.Sous-menu li {
+    display: block;
+}
+
+.Sous-menu_1 li {
+    display: block;
+}
+
+.Sous-menu_2 li {
+    display: block;
+}
+
+.Sous-menu_3 li {
+    display: block;
+}
+
+.wrapper {
+    width: 670px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.Images_Acceuil {
+    display: flex;
+    animation-name: BandeDefilante;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+#Volet_Accueil {
+    width: 572px;
+    height: 400px;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-left: auto;
+    border: 2px solid darkblue;
+    overflow: hidden;
+}
+
+@keyframes BandeDefilante {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-572px);
+    }
+
+    40% {
+        transform: translateX(-1144px);
+    }
+
+    60% {
+        transform: translateX(-1716px);
+    }
+
+    80% {
+        transform: translateX(-2288px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
