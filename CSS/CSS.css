@@ -194,6 +194,7 @@ iframe {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    border: 2px solid yellow;
 }
 
 /* Personnalisation pied de page */
