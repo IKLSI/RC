@@ -175,6 +175,17 @@ tr th {
     margin-left: 8%;
 }
 
+.Image_D4 {
+    display: block;
+    float: right;
+    margin-right: 12%;
+}
+
+.Image_G4 {
+    display: block;
+    margin-left: 12%;
+}
+
 h6 ul li {
     margin-left: 4%;
 }
@@ -276,6 +287,15 @@ footer p {
     }
 
     .Image_G3 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Image_D4 {
+        margin-right: 20%;
+        margin-bottom: 2%;
+    }
+
+    .Image_G4 {
         margin-right: auto;
         margin-left: auto;
     }
