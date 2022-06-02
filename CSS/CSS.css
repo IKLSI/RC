@@ -73,6 +73,11 @@ h6 {
     background: #1a1a1a;
 }
 
+p {
+  text-decoration: underline;
+  text-decoration-color: darkblue;
+}
+
 /* Personnalisation des hr ( trait horizontal ) */
 
 hr {
