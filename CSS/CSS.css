@@ -76,6 +76,7 @@ h6 {
 p {
   text-decoration: underline;
   text-decoration-color: darkred;
+  text-underline-offset: 3px;
 }
 
 /* Personnalisation des hr ( trait horizontal ) */
