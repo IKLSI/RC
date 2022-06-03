@@ -74,9 +74,7 @@ h6 {
 }
 
 p {
-  text-decoration: underline;
-  text-decoration-color: grey;
-  text-underline-offset: 3px;
+    text-decoration: blink;
 }
 
 /* Personnalisation des hr ( trait horizontal ) */
