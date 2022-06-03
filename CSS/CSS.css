@@ -218,6 +218,7 @@ footer p {
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(red, blue);
     -webkit-background-clip: text;
+    text-decoration: none;
 }
 
 .Bas_page {
