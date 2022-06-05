@@ -220,6 +220,9 @@ footer p {
     font-size: 18px;
 }
 
+.Materiel h5{
+    text-align: center;
+}
 
 /* Media screen --> Ajustement pour téléphone */
 
@@ -256,10 +259,6 @@ footer p {
     .Bas_page {
         text-align: center;
         font-size: 11px;
-    }
-
-    .Materiel {
-        text-align: center;
     }
 
     .Image_Droite {
