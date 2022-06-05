@@ -220,6 +220,7 @@ footer p {
     font-size: 18px;
 }
 
+
 /* Media screen --> Ajustement pour téléphone */
 
 @media screen and (max-width:1000px) {
@@ -255,6 +256,10 @@ footer p {
     .Bas_page {
         text-align: center;
         font-size: 11px;
+    }
+
+    .Materiel {
+        text-align: center;
     }
 
     .Image_Droite {
