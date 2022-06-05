@@ -48,10 +48,10 @@ body {
 /* Personnalisation des différentes polices textuels */
 
 h4 {
+    margin-right: 2%;
+    margin-left: 2%;
     text-align: center;
     font-family: 'Poppins',sans-serif;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 h5,
@@ -71,12 +71,6 @@ h6 {
     font-size: 90%;
     color: white;
     background: #1a1a1a;
-}
-
-p {
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-underline-offset: 3px;
 }
 
 /* Personnalisation des hr ( trait horizontal ) */
@@ -110,7 +104,7 @@ tr th {
     border: 1px solid antiquewhite;
 }
 
-.Grey{
+.Grey {
     border: 1px solid grey;
     text-align: center;
     font-weight: bolder;
@@ -157,8 +151,8 @@ tr th {
 
 .Image_G {
     display: block;
-    margin-left: 8%;
     margin-bottom: 1%;
+    margin-left: 8%;
 }
 
 .Image_D2 {
@@ -215,10 +209,10 @@ footer {
 }
 
 footer p {
+    text-decoration: none;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(red, blue);
     -webkit-background-clip: text;
-    text-decoration: none;
 }
 
 .Bas_page {
@@ -230,17 +224,18 @@ footer p {
 
 @media screen and (max-width:1000px) {
     header {
-    width: 100%;
-    height: 400px;
+        width: 100%;
+        height: 400px;
     }
-    
+
     h4 {
         margin-right: 8%;
         margin-left: 8%;
         font-size: 8px;
     }
 
-    h5, p {
+    h5,
+    p {
         margin-left: 3%;
         font-size: 12px;
     }
@@ -250,18 +245,18 @@ footer p {
     }
 
     h6 ul li {
-    margin-left: 8%;
+        margin-left: 8%;
     }
-    
+
     table {
         width: 50%;
     }
 
     .Bas_page {
-    text-align: center;
-    font-size: 11px;
+        text-align: center;
+        font-size: 11px;
     }
-    
+
     .Image_Droite {
         margin-right: 19.3%;
         margin-bottom: 2%;
@@ -271,7 +266,7 @@ footer p {
         margin-right: auto;
         margin-left: auto;
     }
-    
+
     .Image_D {
         margin-right: 18%;
         margin-bottom: 2%;
@@ -279,8 +274,8 @@ footer p {
 
     .Image_G {
         margin-right: auto;
-        margin-left: auto;
         margin-bottom: 2%;
+        margin-left: auto;
     }
 
     .Image_D2 {
@@ -292,6 +287,7 @@ footer p {
         margin-right: auto;
         margin-left: auto;
     }
+
     .Image_D3 {
         margin-right: 23.5%;
         margin-bottom: 2%;
@@ -301,6 +297,7 @@ footer p {
         margin-right: auto;
         margin-left: auto;
     }
+
     .Image_D4 {
         margin-right: 19.3%;
         margin-bottom: 2%;
