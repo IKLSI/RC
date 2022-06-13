@@ -6,6 +6,7 @@ header {
 }
 
 .loader {
+    width: 100%;
     position: absolute;
     display: flex;
     text-align: center;
