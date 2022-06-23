@@ -1,8 +1,49 @@
 /* Menu page Accueil index */
 
+:root {
+    --ecriture: #f1f1f1;
+    --background: #141414;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
 header {
     border-color: blue;
     border-bottom: 1px solid #eee;
+}
+
+h4 {
+    color: var(--ecriture);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.changeTheme {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+    font-family: "Torus Notched";
 }
 
 .loader {
@@ -144,11 +185,6 @@ header li:hover .Sous-menu_3 {
 .wrapper {
     width: 557px;
     margin: auto;
-}
-
-a {
-    text-decoration: none;
-    color: white;
 }
 
 .Images_Acceuil {
