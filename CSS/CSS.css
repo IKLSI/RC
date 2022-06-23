@@ -13,6 +13,13 @@
     scroll-behavior: smooth;
 }
 
+/* Affichage au démarrage */
+
+:root {
+    --ecriture: #f1f1f1;
+    --background: #141414;
+}
+
 header {
     width: 60%;
     height: 350px;
@@ -31,7 +38,26 @@ body {
     padding: 0;
     font-family: 'Lato',sans-serif;
     color: #fff;
-    background-color: #141414;
+    background: var(--background);
+}
+
+/* Thème Dark/Light */
+
+.changeTheme {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+    font-family: "Torus Notched";
 }
 
 /* Personnalisation Titre dans la page accueil */
