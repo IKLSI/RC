@@ -3,12 +3,31 @@
     <head>
         <meta charset="UTF-8"/>
         <title>RC Car</title>
+        <meta name="title" content="Présentation de nos voitures RC" />
         <meta name="author" content="Kyliann LEVESQUE"/>
-        <meta name="keywords" content="Voitures RC, RC Car, Traxxas, Arrma, Schumacher, Yokomo, Tout-Terrain, Off-Road, Crawlers, Drift, Piste, Street Basher"/>
+        <meta name="keywords" content="Voitures RC, RC Car, Traxxas, Arrma, Schumacher, Yokomo, Tout-Terrain, Crawlers, Piste, Drift"/>
         <link rel="stylesheet" href="CSS/CSS.css"/>
         <link rel="stylesheet" href="CSS/Menu_Accueil.css"/>
     </head>
     <body>
+        <div class="changeTheme">
+            <strong>Thème</strong>
+        </div>
+        <script>
+    const switchThemeBtn = document.querySelector('.changeTheme')
+    let toggleTheme = 0;
+    switchThemeBtn.addEventListener('click', () => {
+        if(toggleTheme === 0) {
+            document.documentElement.style.setProperty('--ecriture', '#262626');
+            document.documentElement.style.setProperty('--background', '#F5F5DC');
+            toggleTheme++;
+        } else {
+            document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
+            document.documentElement.style.setProperty('--background', '#141414');
+            toggleTheme--;
+        }
+    })
+    </script>
         <header>
             <nav class="wrapper">
                 <ul>
@@ -21,10 +40,8 @@
                                 <a href="index_2.html#Voiture_3" title="Arrma Mojave">Mojave</a>
                                 <a href="index_2.html#Voiture_4" title="Kyosho Scorpion">Scorpion</a>
                                 <a href="index_2.html#Voiture_5" title="Arrma Kraton">Kraton</a>
-                                <a href="index_2.html#Voiture_6" title="Traxxas MAXX V2">
-                                    MAXX V2 V1<br />
-                                    Stampede
-                                </a>
+                                <a href="index_2.html#Voiture_6" title="Traxxas MAXX V2">MAXX V2/V1</a>
+                                <a href="index_2.html#Voiture_7" title="Traxxas MAXX V2">Stampede</a>
                                 <li>
                                 </ul>
                             </li>
