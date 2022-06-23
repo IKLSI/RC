@@ -52,9 +52,8 @@ body {
     border-radius: 50%;
     background: #333;
     color: #fff;
-    border: 1px solid #333;
+    border: 3px solid red;
     display: flex;
-    justify-content: center;
     align-items: center;    
     cursor: pointer;
     font-family: "Torus Notched";
