@@ -60,6 +60,12 @@ body {
     font-family: "Torus Notched";
 }
 
+.changeTheme:hover {
+    color: cyan;
+    background: #1e1e1e;
+    border: 3px solid darkgreen;
+}
+
 /* Personnalisation Titre dans la page accueil */
 
 .Titre {
