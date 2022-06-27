@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>RC Street Basher</title>
+        <meta name="author" content="Kyliann LEVESQUE"/>
+        <meta name="keywords" content="Voitures RC, RC Car, Traxxas, Arrma, Schumacher, Yokomo, Tout-Terrain, Crawlers, Piste, Drift"/>
+        <link rel="stylesheet" href="CSS/CSS.css"/>
+        <link rel="stylesheet" href="CSS/Menu.css"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="btn">
+                <span class="fas fa-bars">
+                </span>
+            </div>
+            <nav class="Barre">
+                <div class="text">Menu</div>
+                <ul>
+                    <li>
+                        <a href="index.html" title="Accueil" target="_BLANK">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#" class="feat-btn" title="Piste">
+                            Piste
+                            <span class="fas fa-caret-down first"></span>
+                        </a>
+                        <ul class="feat-show">
+                            <li>
+                                <a href="#Voiture_2" title="Arrma Limitless">Limitless</a>
+                                <a href="#Voiture_2" title="Kyosho Fazer MK2">Fazer MK2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <script>
+              $('.btn').click(function(){
+                 $(this).toggleClass("click");
+                 $('.Barre').toggleClass("show");
+              });
+              $('.feat-btn').click(function(){
+                $('nav ul .feat-show').toggleClass("show");
+                $('nav ul .first').toggleClass("rotate");
+              });
+              $('nav ul li').click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+              });
+            </script>
+        </header><br />
+        <div id="Voiture_4">
+            <p>Piste</p>
+            <p>Echelle 1/8</p>
+            <h5>Arrma Limitless</h5><br />
+            <img class="Image_D2" src="https://www.tjdmodels.com/wp-content/uploads/2021/03/arrma-17-limitless-speed-bash-roller-price-tbc31497.jpg" alt="Arrma Limitless" width="560" height="345"/>
+            <img class="Image_G2" src="https://cdn1.arrma-rc.com/assets/images/MVAB9XKBCF22TYB4Y2PXE9UWH4G8WBDJWYCDREVZM8Z8ZRTFBP.jpg" alt="Arrma Limitless" width="560" height="345"/>
+            <h6>
+                Le Limitless est une voiture de piste capable d'atteindre des vitesses folles à plus de 150 km/h, grâce à la puissance de son moteur, son poids plume et aux éléments aérodynamiques. La répartition du poids du a été optimisée pour obtenir un centre de gravité le plus bas possible.<br />
+                Moteur : Spektrum 4685 1250kv<br />
+                Variateur : Firma 160A 8S<br />
+                Pneus : GRP T03 Revo Soft<br />
+                Servo : Power HD 21 kg<br />
+                Options diverses :
+                <ul>
+                    <li>Différentiel d'Arrma Kraton EXB</li>
+                </ul>
+            </h6>
+        </div>
+        <hr />
+        <!--
+        <div id="Voiture_5">
+            <h5>Arrma Felony</h5><br />
+            <img class="Image_centre" src="https://i.ytimg.com/vi/TkzBR2Qv75U/maxresdefault.jpg" alt="Arrma Felony" width="600" height="345"/>
+            <h6>
+                Le Felony vient apporter un style rétro à la catégorie Street Bash en alliant robustesse et performance. Avec sa traction 4x4, le Felony 6S BLX peut rouler sur toutes les routes et dans toutes les conditions : sur du gravier, de l'asphalte, de la terre ou de l'herbe courte et au soleil, sous la pluie ou la neige.<br />
+                Moteur : Origine du Cen Reeper 1450kv.<br />
+                Variateur : Hobbywing 160A<br />
+            </h6>
+        </div>
+        <hr />
+    -->
+        <div id="Voiture_6">
+            <p>Echelle 1/10</p>
+            <h5>Kyosho Fazer MK2 Alpine / M3 E30</h5><br />
+            <img class="Image_centre" src="https://lesalpinistes.com/wp-content/uploads/2021/03/D484B6CB-7F06-4BB4-A0AF-39ED6C9B0DB2-scaled.jpeg" alt="Fazer MK2" width="570" height="300"/>
+            <h6>
+                La Kyosho Fazer en kit est une voiture RC à 4 roues motrices. Le moteur et l’électronique prennent place sur le côté droit du châssis et la batterie sur le côté gauche. La transmission est par cardan pour plus de fiabilité.<br />
+                Moteur : Hobbywing 3652 3300KV<br />
+                Variateur : Hobbywing Ezrun 60A<br />
+                Pneus : Sweep Racing<br />
+                Options diverses :
+                <ul>
+                    <li>Cardan central alu</li>
+                </ul>
+            </h6>
+        </div>
+        <footer>
+            <p class="Bas_page">
+                <a href="index_7.html" title="Voitures possédées" target="_BLANK">Voitures possédées</a>
+            </p>
+            <p>© KLS</p>
+        </footer>
+    </body>
+</html>
