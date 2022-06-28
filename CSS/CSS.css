@@ -50,11 +50,12 @@ body {
     right: 15px;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     border: 3px solid red;
-    border-radius: 50%;
+    border-radius: 45%;
     font-family: "Torus Notched";
+    font-size: 14px;
     color: #fff;
     background: #333;
     cursor: pointer;
