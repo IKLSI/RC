@@ -44,38 +44,38 @@ body {
 /* Thème Dark/Light */
 
 .changeTheme {
-    position: absolute;
+    display: flex;
+    position: fixed;
     top: 15px;
     right: 15px;
+    align-items: center;
+    justify-content: center;
     width: 80px;
     height: 80px;
-    border-radius: 50%;
-    background: #333;
-    color: #fff;
     border: 3px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    cursor: pointer;
+    border-radius: 50%;
     font-family: "Torus Notched";
+    color: #fff;
+    background: #333;
+    cursor: pointer;
 }
 
 .changeTheme:hover {
+    border: 3px solid darkgreen;
     color: cyan;
     background: #1e1e1e;
-    border: 3px solid darkgreen;
 }
 
 /* Personnalisation Titre dans la page accueil */
 
 .Titre {
+    margin-top: 1.5%;
     text-align: center;
     -webkit-text-fill-color: transparent;
     font-family: "Torus Notched";
     font-size: 50px;
     background: linear-gradient(to right, #36ecde, #109);
     -webkit-background-clip: text;
-    margin-top: 1.5%;
 }
 
 /* Personnalisation des différentes polices textuels */
@@ -254,7 +254,7 @@ footer p {
     font-size: 18px;
 }
 
-.Stuff h5{
+.Stuff h5 {
     text-align: center;
 }
 
@@ -267,9 +267,9 @@ footer p {
     }
 
     .Titre {
-    margin-top: 5%;
+        margin-top: 5%;
     }
-    
+
     h4 {
         margin-right: 8%;
         margin-left: 8%;
@@ -281,7 +281,7 @@ footer p {
         margin-left: 3%;
         font-size: 12px;
     }
-    
+
     h6 {
         font-size: 8px;
     }
