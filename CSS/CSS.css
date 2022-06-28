@@ -131,10 +131,11 @@ table {
     border: 2px solid orange;
     table-layout: fixed;
     font-size: 15px;
+    color: var(--ecriture);
 }
 
 tr th {
-    border: 1px solid antiquewhite;
+    border: 1px solid var(--ecriture);
 }
 
 .Grey {
