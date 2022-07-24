@@ -1,6 +1,7 @@
 /* Menu déroulant */
 
 .btn {
+    content: url("../IMAGES/Icone.jpg");
     position: fixed;
     top: 20px;
     left: 45px;
