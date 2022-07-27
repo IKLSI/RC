@@ -112,6 +112,15 @@ h6 {
     background: #1a1a1a;
 }
 
+h6 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+h6 ul li a:hover{
+    color: cyan!important;
+}
+
 /* Personnalisation des hr ( trait horizontal ) */
 
 hr {
