@@ -20,14 +20,6 @@ a {
     width: 100%;
 }
 
-.lettre {
-    font-family: "Torus Notched";
-    font-size: 40px;
-    letter-spacing: 15px;
-    color: #484848;
-    animation: flash 1.2s linear infinite;
-}
-
 @keyframes flash {
     0% {
         text-shadow: 0 0 7px #fff900;
@@ -43,6 +35,14 @@ a {
         text-shadow: 0 0 7px #fff900;
         color: #fff900;
     }
+}
+
+.lettre {
+    font-family: "Torus Notched";
+    font-size: 40px;
+    letter-spacing: 15px;
+    color: #484848;
+    animation: flash 1.2s linear infinite;
 }
 
 .lettre:nth-child(1) {
