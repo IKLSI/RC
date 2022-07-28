@@ -247,6 +247,17 @@ tr th {
     margin-left: 12%;
 }
 
+.Image_D5 {
+    display: block;
+    float: right;
+    margin-right: 11%;
+}
+
+.Image_G5 {
+    display: block;
+    margin-left: 11%;
+} 
+
 iframe {
     display: block;
     margin-right: auto;
@@ -360,7 +371,7 @@ footer p {
     }
 
     .Image_D4 {
-        margin-right: 19.3%;
+        margin-right: 19%;
         margin-bottom: 2%;
     }
 
@@ -368,4 +379,14 @@ footer p {
         margin-right: auto;
         margin-left: auto;
     }
+
+    .Image_D5 {
+        margin-right: 21.5%;
+        margin-bottom: 2%;
+    }
+
+    .Image_G5 {
+        margin-right: auto;
+        margin-left: auto;
+    } 
 }
