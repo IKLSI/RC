@@ -20,6 +20,8 @@
     --background: #141414;
 }
 
+/* Initialisation */
+
 header {
     width: 60%;
     height: 350px;
@@ -44,8 +46,8 @@ body {
 /* Thème Dark/Light */
 
 button {
-    background: #333;
     border: #333;
+    background: #333;
 }
 
 .changeTheme {
@@ -101,6 +103,10 @@ p {
     color: darkslategrey;
 }
 
+.Stuff h5 {
+    text-align: center;
+}
+
 h6 {
     margin: 5%;
     margin-top: 40px;
@@ -112,16 +118,20 @@ h6 {
     background: #1a1a1a;
 }
 
-h6 ul li a{
+h6 ul li {
+    margin-left: 4%;
+}
+
+h6 ul li a {
     text-decoration: none;
     color: white;
 }
 
-h6 ul li a:hover{
+h6 ul li a:hover {
     color: cyan!important;
 }
 
-/* Personnalisation des hr ( trait horizontal ) */
+/* Personnalisation des hr */
 
 hr {
     display: block;
@@ -137,7 +147,7 @@ hr {
     border-color: darkorange;
 }
 
-/* Personnalisation du tableau page : index_2 */
+/* Personnalisation du tableau --> index_2 */
 
 table {
     width: 20%;
@@ -237,10 +247,6 @@ tr th {
     margin-left: 12%;
 }
 
-h6 ul li {
-    margin-left: 4%;
-}
-
 iframe {
     display: block;
     margin-right: auto;
@@ -258,21 +264,17 @@ footer {
 }
 
 footer p {
+    text-align: right;
     text-decoration: none;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(red, blue);
     -webkit-background-clip: text;
-    text-align: right;
 }
 
 .Bas_page {
+    margin-top: 7px;
     text-align: center;
     font-size: 18px;
-    margin-top: 7px;
-}
-
-.Stuff h5 {
-    text-align: center;
 }
 
 /* Media screen --> Ajustement pour téléphone */
