@@ -122,12 +122,12 @@ h6 ul li {
     margin-left: 4%;
 }
 
-h6 ul li a {
+h6 a {
     text-decoration: none;
     color: white;
 }
 
-h6 ul li a:hover {
+h6 a:hover {
     color: cyan!important;
 }
 
