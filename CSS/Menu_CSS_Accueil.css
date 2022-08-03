@@ -84,6 +84,7 @@ a {
 header li {
     display: inline-block;
     position: relative;
+    margin-top: 2%;
     vertical-align: top;
     color: white;
     background-color: black;
@@ -92,7 +93,7 @@ header li {
 
 header li a {
     display: block;
-    padding: 20px;
+    padding: 18px;
 }
 
 header li a:hover {
