@@ -93,7 +93,7 @@ header li {
 header li a {
     display: block;
     padding: 18px;
-    transition: all 200ms;
+    transition: all 350ms;
 }
 
 header li a:hover {
