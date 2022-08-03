@@ -129,6 +129,6 @@ nav ul li a span.rotate {
 
 @media screen and (max-width:1000px) {
     nav ul li a span {
-        top: 7%;
+        top: 6%;
     }
 }
