@@ -88,12 +88,12 @@ header li {
     vertical-align: top;
     color: white;
     background-color: black;
-    transition: all 200ms;
 }
 
 header li a {
     display: block;
     padding: 18px;
+    transition: all 200ms;
 }
 
 header li a:hover {
