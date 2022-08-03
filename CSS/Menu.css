@@ -24,10 +24,6 @@
     color: white;
 }
 
-.btn.click span:before {
-    content: '\00274E';
-}
-
 .Barre {
     position: fixed;
     left: -250px;
@@ -117,9 +113,11 @@ li a:hover {
 }
 
 nav ul li a span {
+    content: url("../IMAGES/Fleche.png");
     position: absolute;
     top: 18%;
     right: 20px;
+    width: 20px;
     font-size: 22px;
     transition: transform 0.4s;
     transform: translateY(-50%);
