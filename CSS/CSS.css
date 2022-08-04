@@ -61,7 +61,6 @@ button {
     height: 65px;
     border: 3px solid red;
     border-radius: 45%;
-    font-family: "Torus Notched";
     font-size: 14px;
     color: #fff;
     background: #333;
@@ -70,8 +69,6 @@ button {
 
 .changeTheme:hover {
     border: 3px solid darkgreen;
-    color: cyan;
-    background: #1e1e1e;
 }
 
 /* Personnalisation Titre dans la page accueil */
@@ -127,8 +124,8 @@ h6 a {
     color: white;
 }
 
-h6 a:hover {
-    color: cyan!important;
+h6 a:hover{
+    color: gold;!important;
 }
 
 /* Personnalisation des hr */
