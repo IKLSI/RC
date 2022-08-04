@@ -132,3 +132,9 @@ nav ul li a span.rotate {
         top: 8%;
     }
 }
+
+@media screen and (min-width: 2000px) and (max-width: 2700px) {
+    nav ul li a span {
+        top: 11%;
+    }
+}
