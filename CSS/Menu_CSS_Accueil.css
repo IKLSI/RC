@@ -208,8 +208,9 @@ header li:hover .Sous-menu_3 {
     100% {
         transform: translateX(0px);
     }
+}
     
-    @media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) {
     #Volet_Accueil {
     margin-bottom:  10%;
     }
