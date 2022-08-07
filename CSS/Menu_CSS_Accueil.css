@@ -5,6 +5,35 @@ header {
     border-bottom: 1px solid #eee;
 }
 
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.Premiere {
+    background: url(../IMAGES/XMAXX.jpg) no-repeat center center fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Seconde {
+    background: url(../IMAGES/Outcast.jpg) no-repeat center center fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Troisieme {
+    background: url(../IMAGES/ARRMA.jpg) no-repeat center center fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Quatrieme {
+    background: url(../IMAGES/EREVO.jpg) no-repeat center center fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 h4 {
     color: var(--ecriture);
 }
@@ -209,9 +238,29 @@ header li:hover .Sous-menu_3 {
         transform: translateX(0px);
     }
 }
-    
+
 @media screen and (max-width:1000px) {
-    #Volet_Accueil {
-    margin-bottom: 6%;
+    .Premiere {
+        background: url(../IMAGES/Mojave.jpg) no-repeat center center fixed;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .Seconde {
+        background: url(../IMAGES/Outcast.png) no-repeat center center fixed;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .Troisieme {
+        width: 0;
+        height: 0;
+        background-image: none;
+    }
+
+    .Quatrieme {
+        width: 0;
+        height: 0;
+        background-image: none;
     }
 }
