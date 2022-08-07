@@ -247,7 +247,7 @@ header li:hover .Sous-menu_3 {
     }
 
     .Seconde {
-        background: url(../IMAGES/Outcast.png) no-repeat center center fixed;
+        background: url(../IMAGES/Outcast.PNG) no-repeat center center fixed;
         background-attachment: fixed;
         background-size: cover;
     }
