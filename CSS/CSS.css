@@ -13,6 +13,17 @@
     scroll-behavior: smooth;
 }
 
+/* Personnalisation Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(0deg, brown, orange, green);
+}
+
 /* Affichage au démarrage */
 
 :root {
@@ -124,8 +135,9 @@ h6 a {
     color: white;
 }
 
-h6 a:hover{
-    color: gold;!important;
+h6 a:hover {
+!important;
+    color: gold;
 }
 
 /* Personnalisation des hr */
@@ -253,7 +265,7 @@ tr th {
 .Image_G5 {
     display: block;
     margin-left: 11%;
-} 
+}
 
 iframe {
     display: block;
@@ -385,5 +397,5 @@ footer p {
     .Image_G5 {
         margin-right: auto;
         margin-left: auto;
-    } 
+    }
 }
