@@ -10,6 +10,8 @@ section {
     height: 100vh;
 }
 
+/* Succession des 3 images */
+
 .Premiere {
     background: url(../IMAGES/XMAXX.jpg) no-repeat center center fixed;
     background-attachment: fixed;
@@ -17,18 +19,12 @@ section {
 }
 
 .Seconde {
-    background: url(../IMAGES/Outcast.jpg) no-repeat center center fixed;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.Troisieme {
     background: url(../IMAGES/ARRMA.jpg) no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.Quatrieme {
+.Troisieme {
     background: url(../IMAGES/EREVO.jpg) no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
@@ -43,7 +39,9 @@ a {
     color: white;
 }
 
-.loader {
+/* Personnalisation "Bienvenue" */
+
+.Bienvenue {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -110,10 +108,17 @@ a {
     animation-delay: 0.9s;
 }
 
+/* Personnalisation Menu */
+
+.Menu {
+    width: 557px;
+    margin: auto;
+}
+
 header li {
     display: inline-block;
     position: relative;
-    margin-top: 2%;
+    margin-top: 3%;
     vertical-align: top;
     color: white;
     background-color: black;
@@ -175,26 +180,11 @@ header li:hover .Sous-menu_3 {
     background-color: black;
 }
 
-.Sous-menu li {
+.Sous-menu li, .Sous-menu_1 li, .Sous-menu_2 li, .Sous-menu_3 li {
     display: block;
 }
 
-.Sous-menu_1 li {
-    display: block;
-}
-
-.Sous-menu_2 li {
-    display: block;
-}
-
-.Sous-menu_3 li {
-    display: block;
-}
-
-.wrapper {
-    width: 557px;
-    margin: auto;
-}
+/* Personnalisation Volet d'images */
 
 .Images_Acceuil {
     display: flex;
@@ -239,7 +229,9 @@ header li:hover .Sous-menu_3 {
     }
 }
 
-@media screen and (max-width:1000px) {
+/* Media Screen */
+
+@media screen and (max-width:1300px) {
     .Premiere {
         background: url(../IMAGES/Mojave.jpg) no-repeat center center fixed;
         background-attachment: fixed;
@@ -250,15 +242,10 @@ header li:hover .Sous-menu_3 {
         background: url(../IMAGES/Outcast.PNG) no-repeat center center fixed;
         background-attachment: fixed;
         background-size: cover;
+        width: 100%;
     }
 
     .Troisieme {
-        width: 0;
-        height: 0;
-        background-image: none;
-    }
-
-    .Quatrieme {
         width: 0;
         height: 0;
         background-image: none;
