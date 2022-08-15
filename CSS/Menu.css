@@ -115,7 +115,6 @@ nav li a:hover {
 nav ul li a span {
     content: url("../IMAGES/Fleche.png");
     position: absolute;
-    top: 15%;
     right: 20px;
     width: 20px;
     font-size: 22px;
@@ -135,7 +134,7 @@ nav ul li a span.rotate {
 
 @media screen and (min-width: 1500px) {
     nav ul li a span {
-        top: 20%;
+        top: 16%;
     }
 }
 
