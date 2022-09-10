@@ -115,6 +115,7 @@ nav li a:hover {
 nav ul li a span {
     content: url("../IMAGES/Fleche.png");
     position: absolute;
+    top: 16%;
     right: 20px;
     width: 20px;
     font-size: 22px;
