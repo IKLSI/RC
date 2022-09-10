@@ -162,21 +162,21 @@ header li:hover .Sous-menu_3 {
 .Sous-menu_1 {
     display: none;
     position: absolute;
-    width: 172.5px;
+    width: 173px;
     background-color: black;
 }
 
 .Sous-menu_2 {
     display: none;
     position: absolute;
-    width: 107px;
+    width: 107.5px;
     background-color: black;
 }
 
 .Sous-menu_3 {
     display: none;
     position: absolute;
-    width: 114px;
+    width: 113.5px;
     background-color: black;
 }
 
