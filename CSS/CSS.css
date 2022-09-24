@@ -317,6 +317,28 @@ footer p {
     font-size: 18px;
 }
 
+/* Flèches animées index 6 */
+
+@keyframes down{
+    0% {position:relative; top:0px; opacity: 0}
+    50% {position:relative; top:15px; opacity: 0.5}
+    100% {position:relative; top:30px; opacity: 1}
+
+}
+
+.Fleche{
+    animation: down 1s infinite linear alternate;
+    width: 3%;
+    margin-left: 50%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.Mustang {
+    width: 30%;
+    margin-left: 35%;
+}
+
 /* Media screen --> Ajustement pour téléphone */
 
 @media screen and (max-width:1000px) {
