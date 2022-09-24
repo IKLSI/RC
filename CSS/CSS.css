@@ -334,11 +334,6 @@ footer p {
     margin-bottom: 3%;
 }
 
-.Mustang {
-    width: 30%;
-    margin-left: 35%;
-}
-
 /* Media screen --> Ajustement pour téléphone */
 
 @media screen and (max-width:1000px) {
