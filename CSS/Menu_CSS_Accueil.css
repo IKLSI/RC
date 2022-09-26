@@ -127,7 +127,7 @@ header li {
 header li a {
     display: block;
     padding: 18px;
-    transition: all 350ms;
+    transition: all 500ms;
 }
 
 header li a:hover {
