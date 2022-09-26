@@ -30,6 +30,8 @@ section {
     background-size: cover;
 }
 
+/* Personnalisation balise textuel et a */
+
 h4 {
     color: var(--ecriture);
 }
@@ -39,7 +41,7 @@ a {
     color: white;
 }
 
-/* Personnalisation "Bienvenue" */
+/* Personnalisation message "Bienvenue" */
 
 .Bienvenue {
     display: flex;
