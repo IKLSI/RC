@@ -126,6 +126,8 @@ nav ul li a span.rotate {
     transform: translateY(-20%) rotate(-180deg);
 }
 
+/* Media screen pour différentes résolutions téléphone, ordinateur grand / écran */
+
 @media screen and (max-width:1000px) {
     nav ul li a span {
         top: 8%;
