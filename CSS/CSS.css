@@ -112,7 +112,7 @@ p {
 }
 
 p {
-    font-family: "Courier, monospace";
+    font-family: "Courier,monospace";
     font-size: 25px;
 }
 
@@ -302,16 +302,18 @@ footer {
     color: #828282;
     background-color: #1a1a1a;
     -webkit-user-select: none;
-    -webkit-touch-callout: none;
     -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
     -ms-user-select: none;
-    user-select: none
 }
 
 footer p {
     text-align: right;
     text-decoration: none;
     -webkit-text-fill-color: transparent;
+    font-family: "Arial Black";
+    font-size: 15px;
     background: -webkit-linear-gradient(red, blue);
     -webkit-background-clip: text;
 }
@@ -324,19 +326,32 @@ footer p {
 
 /* Flèches animées index 6 */
 
-@keyframes down{
-    0% {position:relative; top:0px; opacity: 0}
-    50% {position:relative; top:15px; opacity: 0.5}
-    100% {position:relative; top:30px; opacity: 1}
+@keyframes down {
+    0% {
+        position: relative;
+        top: 0;
+        opacity: 0;
+    }
 
+    50% {
+        position: relative;
+        top: 15px;
+        opacity: 0.5;
+    }
+
+    100% {
+        position: relative;
+        top: 30px;
+        opacity: 1;
+    }
 }
 
-.Fleche{
-    animation: down 1s infinite linear alternate;
+.Fleche {
     width: 3%;
-    margin-left: 50%;
     margin-top: 2%;
     margin-bottom: 3%;
+    margin-left: 50%;
+    animation: down 1s infinite linear alternate;
 }
 
 /* Media screen --> Ajustement pour téléphone */
