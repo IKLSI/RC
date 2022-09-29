@@ -235,13 +235,13 @@ header li:hover .Sous-menu_3 {
 
 @media screen and (max-width:1300px) {
     .Premiere {
-        background: url(../IMAGES/Mojave.jpg) no-repeat center center fixed;
+        background: url("../IMAGES/Mojave.jpg") no-repeat center fixed;
         background-attachment: fixed;
         background-size: cover;
     }
 
     .Seconde {
-        background: url(../IMAGES/Outcast.PNG) no-repeat center center fixed;
+        background: url("https://cdn.shopify.com/s/files/1/0036/2115/8947/products/ARA5210_1024x.jpg?v=1622725510") no-repeat center fixed;
         background-attachment: fixed;
         background-size: cover;
         width: 100%;
