@@ -295,17 +295,13 @@ iframe {
 }
 
 /* Personnalisation pied de page */
-
 footer {
+    margin-top: 2%;
     padding: 25px 100px;
     text-align: center;
     color: #828282;
     background-color: #1a1a1a;
     -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-user-select: none;
 }
 
 footer p {
