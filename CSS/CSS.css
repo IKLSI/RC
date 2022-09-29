@@ -111,6 +111,11 @@ p {
     color: darkslategrey;
 }
 
+p {
+    font-family: "Courier, monospace";
+    font-size: 25px;
+}
+
 .Stuff h5 {
     text-align: center;
 }
