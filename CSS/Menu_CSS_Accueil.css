@@ -19,7 +19,7 @@ section {
 }
 
 .Seconde {
-    background: url("https://cdn.salla.sa/gHYHqpDt7tCDbT4FV8JPsgStLOUJZYXkmM1znwUY.jpeg") no-repeat center center fixed;
+    background: url(../IMAGES/ARRMA.jpg) no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
 }
