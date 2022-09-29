@@ -2,9 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
-        <title>RC Street Basher</title>
+        <title>RC Off-Road</title>
         <meta name="author" content="Kyliann 'KLS'"/>
-        <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMmQyMjKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg4OAkzMzOeMzMzewAAAAAAAAAAAAAAADIyMoQzMzPMNDQ0PzIyMvIAAAAAAAAAAAAAAAAAAAAAAAAAADU1NRMzMzP5Nzc3FzQ0NE4zMzP+AAAAAAAAAAAyMjLsAAAAAAAAAAA0NDQ/MjIy8gAAAAAAAAAAAAAAAAAAAAAyMjLOVVVVAzIyMvsyMjKNMzMzmjExMR8AAAAAMzMz+TAwMCoAAAAAAAAAADQ0ND8yMjLyAAAAAAAAAAAxMTEaMzMz/wAAAAAyMjLiMjIyXzMzM60zMzMUAAAAAAAAAAAyMjL8NDQ0IgAAAAAAAAAANDQ0PzIyMvIxMTEaMzMz/wAAAAAAAAAAMjIyLTIyMowyMjLxAAAAAAAAAAAAAAAAAAAAADMzM/4xMTEaAAAAAAAAAAAxMTFXMzMz/wAAAAAAAAAAMjIyZTIyMuIyMjI9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zMzMxQvLy8bMzMz/gAAAAAAAAAAMjIyZjIyMuIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz/gAAAAAAAAAAMjIyZjIyMuEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALy8vIDIyMmYzMzPuMzMz/wAAAAAAAAAAMjIyZTMzM+4zMzPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/TIyMlEAAAAAAAAAAAAAAAAAAAAAMjIyZTMzM/8AAAAAMjIyfTMzM9AAAAAAAAAAAAAAAAAAAAAAMjIypjQ0ND8AAAAAMjIyvjIyMkIAAAAAMDAwRDIyMuIyMjJMMjIy7AAAAAAzMzN7MzMz/zMzM/8AAAAAAAAAADMzM/8AAAAAMzMz/jMzMx4yMjK7Ly8vIAAAAAAyMjLIAAAAADIyMkwyMjLsAAAAAAAAAAAxMTFhMjIyhAAAAAAzMzP/MzMz/jIyMhkAAAAAMzMzXjMzM5UAAAAAMjIyywAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAMjIysDIyMhkAAAAAMzMzUDMzM+kAAAAAMjIyoTMzM0AAAAAAAAAAADIyMpczMzPwMzMzBQAAAAAzMzNVMzMzlQAAAAAAAAAAMzMzUDMzM+oAAAAAMjIyhzIyMuMAAAAAAAAAAAAAAAAAAAAAMzMzCjIyMvUzMzOzMzMz/wAAAAAAAAAAAAAAADIyMpIzMzP/MjIy+zIyMmUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMTExPgAAAAEAAAAA7/cAAJftAAC70QAAvdUAAN65AADvdwAA9u8AAPnfAADznwAAv28AAG6zAABW3QAAOt0AAHXOAADp8QAAx/8AAA==" rel="icon" type="image/x-icon" />
+        <link href="IMAGES/Icone.png" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="CSS/CSS.css"/>
         <link rel="stylesheet" href="CSS/Menu.css"/>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -15,20 +15,20 @@
             <button>🔆 | 🌙</button>
         </div>
         <script>
-    const switchThemeBtn = document.querySelector('.changeTheme')
-    let toggleTheme = 0;
-    switchThemeBtn.addEventListener('click', () => {
-        if(toggleTheme === 0) {
-            document.documentElement.style.setProperty('--ecriture', '#262626');
-            document.documentElement.style.setProperty('--background', '#F5F5DC');
-            toggleTheme++;
-        } else {
-            document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
-            document.documentElement.style.setProperty('--background', '#141414');
-            toggleTheme--;
-        }
-    })
-    </script>
+            const switchThemeBtn = document.querySelector('.changeTheme')
+            let toggleTheme = 0;
+             switchThemeBtn.addEventListener('click', () => {
+            if(toggleTheme === 0) {
+                document.documentElement.style.setProperty('--ecriture', '#262626');
+                document.documentElement.style.setProperty('--background', '#F5F5DC');
+                toggleTheme++;
+            } else {
+                document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
+                document.documentElement.style.setProperty('--background', '#141414');
+                toggleTheme--;
+            }
+            })
+        </script>
         <header>
             <div class="btn">
                 <span class="fas fa-bars">
@@ -56,17 +56,17 @@
                 </ul>
             </nav>
             <script>
-              $('.btn').click(function(){
-                 $(this).toggleClass("click");
-                 $('.Barre').toggleClass("show");
-              });
-              $('.feat-btn').click(function(){
-                $('nav ul .feat-show').toggleClass("show");
-                $('nav ul .first').toggleClass("rotate");
-              });
-              $('nav ul li').click(function(){
-                $(this).addClass("active").siblings().removeClass("active");
-              });
+                $('.btn').click(function(){
+                    $(this).toggleClass("click");
+                    $('.Barre').toggleClass("show");
+                });
+                $('.feat-btn').click(function(){
+                    $('nav ul .feat-show').toggleClass("show");
+                    $('nav ul .first').toggleClass("rotate");
+                });
+                $('nav ul li').click(function(){
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
             </script>
         </header><br />
         <div id="Voiture_1">
