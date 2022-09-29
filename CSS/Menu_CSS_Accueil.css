@@ -13,19 +13,19 @@ section {
 /* Succession des 3 images */
 
 .Premiere {
-    background: url(../IMAGES/XMAXX.jpg) no-repeat center center fixed;
+    background: url("https://traxxas.com/sites/default/files/news/77086-4-X-Maxx-OrangeX-Front-LtoR.jpg") no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .Seconde {
-    background: url(../IMAGES/ARRMA.jpg) no-repeat center center fixed;
+    background: url("https://www.modellsport.gr/images1/ARRMA-RC/arrma-mojave-6s-blx.jpg") no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .Troisieme {
-    background: url(../IMAGES/EREVO.jpg) no-repeat center center fixed;
+    background: url("https://www.greathobbies.com/products/t/trx/trx860864o_28.jpg") no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
 }
