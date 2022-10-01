@@ -373,6 +373,10 @@ footer p {
         margin-left: 3%;
         font-size: 12px;
     }
+    
+    p {
+        font-size: 9px;
+    }
 
     h6 {
         font-size: 8px;
