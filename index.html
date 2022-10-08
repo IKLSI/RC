@@ -12,20 +12,7 @@
         <div class="changeTheme">
             <button>🔆 | 🌙</button>
         </div>
-        <script type="text/javascript">
-            const switchThemeBtn = document.querySelector('.changeTheme')
-            let toggleTheme = 0;
-             switchThemeBtn.addEventListener('click', () => {
-            if(toggleTheme === 0) {
-                document.documentElement.style.setProperty('--ecriture', '#262626');
-                document.documentElement.style.setProperty('--background', '#F5F5DC');
-                toggleTheme++;
-            } else {
-                document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
-                document.documentElement.style.setProperty('--background', '#141414');
-                toggleTheme--;
-            }
-            })
+        <script src="JS/Mod.js" type="text/javascript">
         </script>
         <section class="Premiere"></section>
         <section class="Seconde"></section>
@@ -104,24 +91,10 @@
         </div>
         <h4>Bon pas de blabla supplémentaire, je vous souhaite à tous une bonne visite</h4><br />
         <footer>
-            <script type="text/javascript">
-                document.write("<font color='white' size='2' face='arial'>")
-                var mydate=new Date()
-                var year=mydate.getYear()
-                if (year<2000)
-                    year += (year < 1900) ? 1900 : 0
-                    var day=mydate.getDay()
-                    var month=mydate.getMonth()
-                    var daym=mydate.getDate()
-                if (daym<10)
-                    daym="0"+daym
-                    var dayarray=new Array("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi")
-                    var montharray=new Array(" janvier "," fevrier "," mars ","avril ","mai ","juin","juillet ","aout ","septembre "," octobre "," novembre "," décembre ")
-                document.write("   "+dayarray[day]+", "+daym+" "+montharray[month]+year+" ")
-                document.write("</b></i></font>")
+            <script src="JS/Date.js">
             </script>
             <p class="Bas_page">
-                <a href="PRODUIT/Boutique.html" title="Boutique" target="_BLANK">Boutique</a>
+                <a href="PRODUIT/Boutique.html" title="Stuff" target="_BLANK">Boutique</a>
             </p>
             <p>&copy; KLS</p>
         </footer>
