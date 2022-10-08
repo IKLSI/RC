@@ -14,20 +14,7 @@
         <div class="changeTheme">
             <button>🔆 | 🌙</button>
         </div>
-        <script type="text/javascript">
-            const switchThemeBtn = document.querySelector('.changeTheme')
-            let toggleTheme = 0;
-             switchThemeBtn.addEventListener('click', () => {
-            if(toggleTheme === 0) {
-                document.documentElement.style.setProperty('--ecriture', '#262626');
-                document.documentElement.style.setProperty('--background', '#F5F5DC');
-                toggleTheme++;
-            } else {
-                document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
-                document.documentElement.style.setProperty('--background', '#141414');
-                toggleTheme--;
-            }
-            })
+        <script src="JS/Mod.js">
         </script>
         <header>
             <div class="btn">
@@ -58,18 +45,7 @@
                     </li>
                 </ul>
             </nav>
-            <script>
-                $('.btn').click(function(){
-                    $(this).toggleClass("click");
-                    $('.Barre').toggleClass("show");
-                });
-                $('.feat-btn').click(function(){
-                    $('nav ul .feat-show').toggleClass("show");
-                    $('nav ul .first').toggleClass("rotate");
-                });
-                $('nav ul li').click(function(){
-                    $(this).addClass("active").siblings().removeClass("active");
-                });
+            <script src="JS/Menu.js">
             </script>
         </header><br />
         <div id="Voiture_1">
@@ -124,15 +100,15 @@
             <img class="Image_centre" src="https://stat.ameba.jp/user_images/20200417/13/team-tetsujin/0f/63/j/o4032302414744876840.jpg?caw=800" alt="YD2S" width="600" height="350"/>
             <h6>
                 Avec le YD-2S, il y a la possibilité de fixer le moteur en position haute avec trois différentes positions. Le fait d’avoir le moteur placé plus en hauteur occasionnera plus de roulis au châssis.<br />
-                Moteur : 
+                Moteur :
                 <a href="https://www.rcteam.fr/moteurs-brushless-110/24203-hobbywing-moteur-quicrun-3650sd-sensored-g2-6938994412131.html#/100-bobinage-8_5t">Hobbywing Quicrun 3650 8.5T Sensored</a><br />
                 Variateur :
                 <a href="https://www.rcteam.fr/variateurs-brushless/28440-hobbywing-variateur-quicrun-120a-sensored-10bl120-6938994413121.html">Hobbywing 10BL120</a><br />
-                Servo : 
+                Servo :
                 <a href="https://www.miniplanes.fr/etronix-95kg/009s-lp-digi-servo-coreless-metal-gear-et2036#tabs-description">Etronix 9.5kg 0.09S</a><br />
-                Gyroscope : 
+                Gyroscope :
                 <a href="https://www.driftparadiz.fr/products/gyro-drift-dual-system-rouge-power-hd">Power HD G1</a><br />
-                Carroserie : 
+                Carroserie :
                 <a href="https://www.driftparadiz.fr/products/nissan-gtr-silhouette-lb-tetsujin">Tetsujin R35</a>
             </h6>
         </div>
