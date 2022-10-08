@@ -94,6 +94,14 @@ button {
     -webkit-background-clip: text;
 }
 
+.Titre2 {
+    margin-top: 1.5%;
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 50px;
+    color: white;
+}
+
 /* Personnalisation des différentes polices textuels */
 
 h4 {
@@ -312,6 +320,30 @@ footer p {
     font-size: 15px;
     background: -webkit-linear-gradient(red, blue);
     -webkit-background-clip: text;
+}
+
+.Cible_Produit:hover {
+    color: white;
+}
+
+.Partie_Gauche {
+    width: 40%;
+    height: 300px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 7%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.Partie_Droite {
+    width: 40%;
+    height: 300px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 7%;
+    text-align: center;
+    font-size: 16px;
 }
 
 .Bas_page {
