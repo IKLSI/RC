@@ -326,6 +326,11 @@ footer p {
     color: white;
 }
 
+.Cible_Produit img {
+    -webkit-box-shadow: 0 0 0 8px #000,0 0 0 16px #4B4C4B,0 0 0 24px #828482,0 0 0 31px #B2B5B2,0 0 0 39px #DADDDA,5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0 0 0 8px #000,0 0 0 16px #4B4C4B,0 0 0 24px #828482,0 0 0 31px #B2B5B2,0 0 0 39px #DADDDA,5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 .Partie_Gauche {
     float: left;
     width: 40%;
