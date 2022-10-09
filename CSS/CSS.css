@@ -97,7 +97,7 @@ button {
 .Titre2 {
     margin-top: 1.5%;
     text-align: center;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-family: Brush Script MT,Brush Script Std,cursive;
     font-size: 50px;
     color: white;
 }
@@ -303,6 +303,7 @@ iframe {
 }
 
 /* Personnalisation pied de page */
+
 footer {
     margin-top: 2%;
     padding: 25px 100px;
@@ -327,21 +328,21 @@ footer p {
 }
 
 .Partie_Gauche {
+    float: left;
     width: 40%;
     height: 300px;
-    float: left;
-    margin-left: 10%;
     margin-top: 7%;
+    margin-left: 10%;
     text-align: center;
     font-size: 16px;
 }
 
 .Partie_Droite {
+    float: right;
     width: 40%;
     height: 300px;
-    float: right;
-    margin-right: 10%;
     margin-top: 7%;
+    margin-right: 10%;
     text-align: center;
     font-size: 16px;
 }
@@ -384,7 +385,7 @@ footer p {
 
 /* Media screen --> Ajustement pour téléphone */
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
     header {
         width: 100%;
         height: 400px;
@@ -405,7 +406,7 @@ footer p {
         margin-left: 3%;
         font-size: 12px;
     }
-    
+
     p {
         font-size: 9px;
     }
@@ -484,6 +485,18 @@ footer p {
     }
 
     .Image_G5 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .Partie_Gauche {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .Partie_Droite {
+        display: block;
         margin-right: auto;
         margin-left: auto;
     }
