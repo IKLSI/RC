@@ -31,7 +31,7 @@
     --background: #141414;
 }
 
-/* Initialisation */
+/* Initialisation header | body | html*/
 
 header {
     width: 60%;
@@ -82,7 +82,7 @@ button {
     border: 3px solid darkgreen;
 }
 
-/* Personnalisation Titre dans la page accueil */
+/* Personnalisation Titre h1 dans index */
 
 .Titre {
     margin-top: 1.5%;
@@ -93,6 +93,8 @@ button {
     background: linear-gradient(to right, #36ecde, #109);
     -webkit-background-clip: text;
 }
+
+/* Personnalisation Titre2 h1 dans Boutique | index_7 | index_8 */
 
 .Titre2 {
     margin-top: 1.5%;
@@ -301,6 +303,17 @@ iframe {
     cursor: pointer;
 }
 
+/* Personnalisation visualisation page produit dans Boutique  */
+
+.Cible_Produit:hover {
+    color: white;
+}
+
+.Cible_Produit img {
+    -webkit-box-shadow: 0 0 0 8px #000,0 0 0 16px #4B4C4B,0 0 0 24px #828482,0 0 0 31px #B2B5B2,0 0 0 39px #DADDDA,5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0 0 0 8px #000,0 0 0 16px #4B4C4B,0 0 0 24px #828482,0 0 0 31px #B2B5B2,0 0 0 39px #DADDDA,5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 /* Personnalisation pied de page */
 
 footer {
@@ -320,15 +333,6 @@ footer p {
     font-size: 15px;
     background: -webkit-linear-gradient(red, blue);
     -webkit-background-clip: text;
-}
-
-.Cible_Produit:hover {
-    color: white;
-}
-
-.Cible_Produit img {
-    -webkit-box-shadow: 0 0 0 8px #000,0 0 0 16px #4B4C4B,0 0 0 24px #828482,0 0 0 31px #B2B5B2,0 0 0 39px #DADDDA,5px 5px 15px 5px rgba(0,0,0,0);
-    box-shadow: 0 0 0 8px #000,0 0 0 16px #4B4C4B,0 0 0 24px #828482,0 0 0 31px #B2B5B2,0 0 0 39px #DADDDA,5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .Partie_Gauche {
@@ -357,7 +361,7 @@ footer p {
     font-size: 18px;
 }
 
-/* Flèches animées index 6 */
+/* Flèches animées index_6 */
 
 @keyframes down {
     0% {
