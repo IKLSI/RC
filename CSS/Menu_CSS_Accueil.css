@@ -113,7 +113,7 @@ a {
 /* Personnalisation Menu */
 
 .Menu {
-    width: 557px;
+    width: 655px;
     margin: auto;
 }
 
@@ -154,6 +154,10 @@ header li:hover .Sous-menu_3 {
     display: block;
 }
 
+header li:hover .Sous-menu_4 {
+    display: block;
+}
+
 .Sous-menu {
     display: none;
     position: absolute;
@@ -176,6 +180,13 @@ header li:hover .Sous-menu_3 {
 }
 
 .Sous-menu_3 {
+    display: none;
+    position: absolute;
+    width: 109px;
+    background-color: black;
+}
+
+.Sous-menu_4 {
     display: none;
     position: absolute;
     width: 115px;
