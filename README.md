@@ -31,10 +31,10 @@ Le projet est organisé de la manière suivante :
 |- index.html : Page principale de l'application<br>
 |- README.md : Fichier de présentation du projet<br>
 |- src<br>
-    |- HTML : Contient les fichiers HTML de l'application<br>
-    |- CSS : Contient les fichiers CSS de l'application<br>
-    |- JS : Contient les fichiers JavaScript de l'application<br>
-    |- IMAGES : Contient les images utilisées dans l'application<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- HTML : Contient les fichiers HTML de l'application<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- CSS : Contient les fichiers CSS de l'application<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- JS : Contient les fichiers JavaScript de l'application<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- IMAGES : Contient les images utilisées dans l'application<br>
 
 ## Comment exécuter le projet
 
