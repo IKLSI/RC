@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title>Connexion à son compte</title>
+	<meta name="author" content="Kyliann 'KLS'"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../../IMAGES/Icone.png" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="../../CSS/CSS_Compte.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Connexion à son compte</h1>
+		<form id="signupForm">
+			<label for="email">Email :</label>
+			<input type="email" id="email" required>
+
+			<label for="password">Mot de passe :</label>
+			<input type="password" id="password" required>
+
+			<button type="submit">Connexion</button>
+		</form>
+	</div>
+
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+		import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+
+		const firebaseConfig = {
+			apiKey: "AIzaSyCG9Z8p0T_WOETsa33_i6jUgm47rvpAxAM",
+			authDomain: "base-de-donnees-kls.firebaseapp.com",
+			projectId: "base-de-donnees-kls",
+			storageBucket: "base-de-donnees-kls.appspot.com",
+			messagingSenderId: "958635132420",
+			appId: "1:958635132420:web:533a64eac4d7efd1a05751",
+			measurementId: "G-7YB0MCGG6X"
+		};
+	
+		// Initialiser Firebase
+		const app = initializeApp(firebaseConfig);
+		const auth = getAuth();
+	
+		// Gérer la soumission du formulaire de connexion
+		const loginForm = document.getElementById("signupForm");
+		loginForm.addEventListener("submit", (e) => {
+			e.preventDefault();
+	
+			// Récupérer les valeurs du formulaire
+			const email = document.getElementById("email").value;
+			const password = document.getElementById("password").value;
+	
+			// Se connecter avec email et mot de passe
+			signInWithEmailAndPassword(auth, email, password)
+				.then(() => {
+					// Connexion réussie
+					alert("Connexion réussie !");
+					loginForm.reset();
+
+					// Redirection après 1 secondes
+					setTimeout(() => {
+						window.location.href = "../../../index.html";
+					}, 1000);
+				})
+				.catch((error) => {
+					// Une erreur s'est produite lors de la connexion
+					console.error("Erreur lors de la connexion :", error);
+					alert("Une erreur s'est produite lors de la connexion. Veuillez réessayer.");
+				});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+	box-sizing: border-box;
+	padding: 20px;
+	font-family: Arial,sans-serif;
+	background: url("https://raw.githubusercontent.com/gist/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/01151_inthedeep_2560x1600.jpg");
+	background-size: cover;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 400px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	margin-bottom: 30px;
+	text-align: center;
+	color: #333;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #555;
+}
+
+input[type="email"],
+input[type="password"] {
+	width: 90%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+button[type="submit"] {
+	width: 96%;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background-color: #2196F3;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #0d8bf2;
+}

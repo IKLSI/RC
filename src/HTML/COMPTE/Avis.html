@@ -1,0 +1,88 @@
+<!-- Index Commentaires -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title>Formulaire d'envoi de données</title>
+	<meta name="author" content="Kyliann 'KLS'"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../../IMAGES/Icone.png" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="../../CSS/CSS_Commentaires.css"/>
+</head>
+<body>
+	<h1>Formulaire d'envoi de données</h1>
+	<div class="container">
+		<form>
+			<label for="pseudo">Pseudo :</label>
+			<input type="text" id="pseudo" required/>
+			<label for="message">Message :</label>
+			<input type="text" id="message" required/>
+			<input type="button" id="submitButton" value="Envoyer"/>
+		</form>
+	</div>
+	<h1>Liste des commentaires</h1>
+	<div id="messages"></div>
+	<script type="module">
+		// Import des fonctions pour le SDK Firebase
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+		import { getFirestore, collection, addDoc, serverTimestamp, onSnapshot } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
+
+		// Configuration de Firebase
+		const firebaseConfig = {
+			apiKey: "AIzaSyCG9Z8p0T_WOETsa33_i6jUgm47rvpAxAM",
+			authDomain: "base-de-donnees-kls.firebaseapp.com",
+			projectId: "base-de-donnees-kls",
+			storageBucket: "base-de-donnees-kls.appspot.com",
+			messagingSenderId: "958635132420",
+			appId: "1:958635132420:web:533a64eac4d7efd1a05751",
+			measurementId: "G-7YB0MCGG6X"
+		};
+
+		// Initialisation de Firebase
+		const app = initializeApp(firebaseConfig);
+		const firestore = getFirestore(app);
+		const messagesContainer = document.getElementById("messages");
+
+		// Fonction pour afficher les messages
+		function displayMessages(snapshot) {
+			messagesContainer.innerHTML = "";
+			snapshot.forEach(doc => {
+				const message = doc.data();
+				const messageElement = document.createElement("div");
+				messageElement.classList.add("message");
+				messageElement.innerHTML = `<p><strong>${message.pseudo}:</strong> ${message.message}</p>`;
+				messagesContainer.appendChild(messageElement);
+			});
+			messagesContainer.scrollTop = messagesContainer.scrollHeight;
+		}
+
+		// Fonction pour envoyer les données à Firebase
+		function submitForm() {
+			const pseudo = document.getElementById("pseudo").value;
+			const message = document.getElementById("message").value;
+			const data = {
+				pseudo: pseudo,
+				message: message,
+				heure: serverTimestamp()
+			};
+
+			addDoc(collection(firestore, "utilisateurs"), data)
+				.then(() => {
+					document.getElementById("pseudo").value = "";
+					document.getElementById("message").value = "";
+				})
+				.catch(error => {
+					console.error("Erreur lors de l'envoi des données :", error);
+				});
+		}
+
+		// Attacher l'événement de clic au bouton
+		const submitButton = document.getElementById("submitButton");
+		submitButton.addEventListener("click", submitForm);
+
+		// Écouter les modifications dans la collection "utilisateurs" et afficher les messages
+		onSnapshot(collection(firestore, "utilisateurs"), displayMessages);
+	</script>
+</body>
+</html>

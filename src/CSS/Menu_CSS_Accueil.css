@@ -1,0 +1,295 @@
+/* Menu page Accueil index */
+
+header {
+	border-color: blue;
+	border-bottom: 1px solid #eee;
+}
+
+section {
+	width: 100%;
+	height: 100vh;
+}
+
+/* Succession des 3 images */
+
+.Premiere {
+	background: url("https://traxxas.com/sites/default/files/news/77086-4-X-Maxx-OrangeX-Front-LtoR.jpg") no-repeat center fixed;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.Seconde {
+	background: url(../IMAGES/ARRMA.jpg) no-repeat center fixed;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.Troisieme {
+	background: url("https://www.greathobbies.com/products/t/trx/trx860864o_28.jpg") no-repeat center fixed;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Personnalisation balise textuel et a */
+
+h4 {
+	color: var(--ecriture);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Personnalisation message "Bienvenue" */
+
+.Bienvenue {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+@keyframes flash {
+	0% {
+		text-shadow: 0 0 7px #fff900;
+		color: #fff900;
+	}
+
+	90% {
+		text-shadow: none;
+		color: #484848;
+	}
+
+	100% {
+		text-shadow: 0 0 7px #fff900;
+		color: #fff900;
+	}
+}
+
+.lettre {
+	font-family: "Torus Notched";
+	font-size: 40px;
+	letter-spacing: 15px;
+	color: #484848;
+	animation: flash 1.2s linear infinite;
+}
+
+.lettre:nth-child(1) {
+	animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+	animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+	animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+	animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+	animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+	animation-delay: 0.8s;
+}
+
+.lettre:nth-child(9) {
+	animation-delay: 0.9s;
+}
+
+/* Personnalisation menu création et connexion de compte */
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+.button {
+	width: 48%;
+	padding: 10px;
+	text-align: center;
+	background-color: #2196F3;
+	color: #ffffff;
+	font-size: 16px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	background-color: var(--background);
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Personnalisation Menu */
+
+.Menu {
+	width: 655px;
+	margin: auto;
+}
+
+header li {
+	display: inline-block;
+	position: relative;
+	margin-top: 3%;
+	vertical-align: top;
+	color: white;
+	background-color: black;
+}
+
+header li a {
+	display: block;
+	padding: 18px;
+	transition: all 500ms;
+}
+
+header li a:hover {
+	border: 1px solid darkorange;
+	color: cyan;
+	background-color: #1a1a1a;
+}
+
+header li:hover .Sous-menu {
+	display: block;
+}
+
+header li:hover .Sous-menu_1 {
+	display: block;
+}
+
+header li:hover .Sous-menu_2 {
+	display: block;
+}
+
+header li:hover .Sous-menu_3 {
+	display: block;
+}
+
+header li:hover .Sous-menu_4 {
+	display: block;
+}
+
+.Sous-menu {
+	display: none;
+	position: absolute;
+	width: 132px;
+	background-color: black;
+}
+
+.Sous-menu_1 {
+	display: none;
+	position: absolute;
+	width: 173px;
+	background-color: black;
+}
+
+.Sous-menu_2 {
+	display: none;
+	position: absolute;
+	width: 107px;
+	background-color: black;
+}
+
+.Sous-menu_3 {
+	display: none;
+	position: absolute;
+	width: 109px;
+	background-color: black;
+}
+
+.Sous-menu_4 {
+	display: none;
+	position: absolute;
+	width: 115px;
+	background-color: black;
+}
+
+.Sous-menu li, .Sous-menu_1 li, .Sous-menu_2 li, .Sous-menu_3 li {
+	display: block;
+}
+
+/* Personnalisation Volet d'images */
+
+.Images_Acceuil {
+	display: flex;
+	animation-name: BandeDefilante;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+}
+
+#Volet_Accueil {
+	width: 572px;
+	height: 400px;
+	margin-right: auto;
+	margin-bottom: 1%;
+	margin-left: auto;
+	border: 2px solid #fff900;
+	overflow: hidden;
+}
+
+@keyframes BandeDefilante {
+	0% {
+		transform: translateX(0);
+	}
+
+	20% {
+		transform: translateX(-572px);
+	}
+
+	40% {
+		transform: translateX(-1144px);
+	}
+
+	60% {
+		transform: translateX(-1716px);
+	}
+
+	80% {
+		transform: translateX(-2288px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+/* Media Screen */
+
+@media screen and (max-width:1300px) {
+	.Premiere {
+		background: url("../IMAGES/Mojave.jpg") no-repeat center fixed;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.Seconde {
+		background: url("https://cdn.shopify.com/s/files/1/0036/2115/8947/products/ARA5210_1024x.jpg?v=1622725510") no-repeat center fixed;
+		background-attachment: fixed;
+		background-size: cover;
+		width: 100%;
+	}
+
+	.Troisieme {
+		width: 0;
+		height: 0;
+		background-image: none;
+	}
+}

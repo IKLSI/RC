@@ -1,0 +1,169 @@
+<!-- Index principale -->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>RC Car</title>
+		<meta name="author" content="Kyliann 'KLS'">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./src/IMAGES/Icone.png" rel="icon" type="image/x-icon">
+		<link rel="stylesheet" href="./src/CSS/CSS.css">
+		<link rel="stylesheet" href="./src/CSS/Menu_CSS_Accueil.css">
+	</head>
+	<body>
+
+		<!-- Bouton pour changer de thème sombre / clair -->
+
+		<div class="changeTheme">
+			<button>🔆 | 🌙</button>
+		</div>
+
+		<!-- Appel du script en JS permettant ce changement -->
+
+		<script src="./src/JS/Mod.js"></script>
+
+		<!-- Première section affichant la premère image dans la partie déroulante -->
+
+		<section class="Premiere"></section>
+
+		<!-- Deuxième section affichant la deuxième image dans la partie déroulante -->
+
+		<section class="Seconde"></section>
+
+		<!-- Troisième section affichant la troisième image dans la partie déroulante -->
+
+		<section class="Troisieme"></section>
+		<header>
+
+			<!-- Menu de navigation à travers les différentes pages sur la partie supérieure en dessous des images déroulantes -->
+			
+			<nav class="Menu">
+				<ul>
+					<li>
+						<a href="./src/HTML/PRESENTATION/Tout_terrain.html" target="_blank" title="Tout-Terrain">Tout-terrain</a>
+						<ul class="Sous-menu">
+							<li>
+								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_1" target="_blank" title="Traxxas XMAXX">XMAXX</a>
+								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_2" target="_blank" title="Arrma Outcast 8S">Outcast</a>
+								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_3" target="_blank" title="Arrma Mojave">Mojave</a>
+								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_4" target="_blank" title="Traxxas Sledge">Sledge</a>
+								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_5" target="_blank" title="Hobao Hyper VS">Hyper VS</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html" target="_blank" title="Tout-terrain 2WD">Tout-terrain 2WD</a>
+						<ul class="Sous-menu_1">
+							<li>
+								<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html#Voiture_1" target="_blank" title="Kyosho Scorpion">Scorpion</a>
+								<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html#Voiture_2" target="_blank" title="Schumacher Cougar KF">Cougar KF</a>
+								<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html#Voiture_3"target="_blank" title="Traxxas Stampede">Stampede</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="./src/HTML/PRESENTATION/Crawler.html" target="_blank" title="Crawlers">Crawlers</a>
+						<ul class="Sous-menu_2">
+							<li>
+								<a href="./src/HTML/PRESENTATION/Crawler.html#Voiture_1" target="_blank" title="Traxxas TRX-4">TRX-4</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="./src/HTML/PRESENTATION/Drift.html" target="_blank" title="Piste-Drift">Drift 2WD</a>
+						<ul class="Sous-menu_3">
+							<li>
+								<a href="./src/HTML/PRESENTATION/Drift.html#Voiture_1" target="_blank" title="Yokomo YD2R-Plus">YD2R-Plus</a>
+								<a href="./src/HTML/PRESENTATION/Drift.html#Voiture_2" target="_blank" title="MST RMX 2.0S">RMX 2.0S</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="./src/HTML/PRESENTATION/Piste.html" target="_blank" title="Piste-Drift">Piste 4WD</a>
+						<ul class="Sous-menu_4">
+							<li>
+								<a href="./src/HTML/PRESENTATION/Piste.html#Voiture_1" target="_blank" title="Arrma Limitless, Felony">Limitless V2</a>
+								<a href="./src/HTML/PRESENTATION/Piste.html#Voiture_2" target="_blank" title="Arrma Limitless, Felony">Felony</a>
+								<a href="./src/HTML/PRESENTATION/Piste.html#Voiture_3" target="_blank" title="Kyosho Fazer MK2">Fazer MK2</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header><br>
+
+		<!-- Affichage du message BIENVENUE avec défilement des lettres en surbrillance -->
+
+		<div class="Bienvenue">
+			<span class="lettre">B</span>
+			<span class="lettre">I</span>
+			<span class="lettre">E</span>
+			<span class="lettre">N</span>
+			<span class="lettre">V</span>
+			<span class="lettre">E</span>
+			<span class="lettre">N</span>
+			<span class="lettre">U</span>
+			<span class="lettre">E&nbsp;</span>
+			<span class="lettre" id="username"></span>
+		</div>
+
+		<!-- Affichage des boutons de connexion et d'inscription avec renvoi vers la page correspondante -->
+
+		<div class="container">
+			<div class="button-container">
+				<button class="button" onclick="redirectToLogin()">Connexion</button>
+				<button class="button" onclick="redirectToSignUp()">S'inscrire</button>
+			</div>
+		</div>
+
+		<script>
+			function redirectToLogin() {
+			  window.location.href = "./src/HTML/COMPTE/Connexion.html";
+			}
+		
+			function redirectToSignUp() {
+			  window.location.href = "./src/HTML/COMPTE/Inscription.html";
+			}
+		</script>
+
+		<!-- Appel du script en JS permettant l'affichage du pseudo utilisateur -->
+		
+		<script src="./src/JS/Prompt.js"></script>
+
+		<!-- Titre principal -->
+
+		<h1 class="Titre">CE SITE EST DEDIÉ A LA PRÉSENTATION DE NOS VOITURES RC</h1><br>
+
+		<!-- Volet de défilement d'images  -->
+
+		<div id="Volet_Accueil">
+			<div class="Images_Acceuil">
+				<img src="https://www.mrcmodelisme.com/wp-content/uploads/2020/10/90076-4-Hoss-4x4-VXL-GREEN-Dirt-Wheelie-1312-1143x800.jpg" alt="Traxxas Hoss" width="572" height="400">
+				<img src="https://www.lindinger.at/media/68/d0/46/1639122807/89086-4-Maxx-Action-ORNG-D1614.jpg" alt="Traxxas MAXX V2" width="572" height="400">
+				<img src="https://cdn.shopify.com/s/files/1/0263/8469/5395/files/Traxxas-X-maxx-review-jumping-each-other.gif" alt="GIF Traxxas XMAXX" width="572" height="400">
+				<img src="https://www.eurorc.fr/tuotekuvat/1200x1200/RYVUEF6QQE8CGBD9NE4EX3MFEQV2WZNP6828K9JBCFAJAMHDGJ.jpg" alt="ARRMA Kraton" width="572" height="400">
+				<img src="https://mikanews.de/wp-content/uploads/2019/09/ARA106058-Action-12.jpg" alt="ARRMA Mojave" width="572" height="400">
+			</div>
+		</div>
+		<h4>Ici, vous pourrez découvrir une sélection de modèles de voitures radiocommandées, classées par catégories. Chaque modèle est accompagné d'une fiche descriptive détaillée, comprenant des informations sur les spécifications techniques, les performances et un lien vers une boutique en ligne</h4><br>
+		<h4>Que vous soyez un passionné de voitures RC ou que vous cherchiez simplement des informations sur ces modèles, nous espérons que notre site vous sera utile et informatif.</h4>
+
+		<h4>
+			<a href="./src/HTML/COMPTE/Avis.html" target="_blank" title="Avis" target="_BLANK">Merci de nous laisser un avis si vous avez apprécié notre site</a>
+		</h4>
+
+		<!-- Pied de page -->
+
+		<footer>
+
+			<!-- Script pour l'affichage de la date journalière -->
+
+			<script src="./src/JS/Date.js"></script>
+			<p class="Bas_page">
+				<a href="./src/HTML/PRODUIT/indexBoutique.html" target="_blank" title="Stuff" target="_BLANK">Boutique</a>
+			</p>
+			<p>&copy; KLS</p>
+		</footer>
+	</body>
+</html>
