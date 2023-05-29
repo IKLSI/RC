@@ -166,5 +166,66 @@
 			</p>
 			<p>&copy; KLS</p>
 		</footer>
+		
+		<div id="userAccount">
+			<button id="accountButton"></button>
+			<div id="emailContainer"></div>
+		</div>
+			
+		<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
+
+		<script>
+			
+			// Configuration de Firebase
+			const firebaseConfig = {
+				apiKey: "AIzaSyCG9Z8p0T_WOETsa33_i6jUgm47rvpAxAM",
+				authDomain: "base-de-donnees-kls.firebaseapp.com",
+				projectId: "base-de-donnees-kls",
+				storageBucket: "base-de-donnees-kls.appspot.com",
+				messagingSenderId: "958635132420",
+				appId: "1:958635132420:web:533a64eac4d7efd1a05751",
+				measurementId: "G-7YB0MCGG6X"
+			};
+
+			firebase.initializeApp(firebaseConfig);
+		</script>
+
+		<script>
+			window.addEventListener("message", (event) => {
+				// Vérifier si des données ont été reçues et si l'adresse e-mail est présente
+				if (event.data && event.data.userEmail) {
+					// Stocker l'adresse e-mail dans le localStorage
+					localStorage.setItem("userEmail", event.data.userEmail);
+					// Afficher l'adresse e-mail dans un élément HTML avec l'ID "userEmail"
+					document.getElementById("userEmail").textContent = event.data.userEmail;
+				}
+			});
+
+			// Vérifier si l'utilisateur est connecté en vérifiant la présence de l'adresse e-mail dans le localStorage
+			const userEmail = localStorage.getItem("userEmail");
+			if (userEmail) {
+				// Afficher le bouton de compte avec une image de profil
+				const accountButton = document.getElementById("accountButton");
+				accountButton.innerHTML = `<img src="https://winaero.com/blog/wp-content/uploads/2018/08/Windows-10-user-icon-big.png" alt="Image de profil" width="40" height="40">`;
+				
+				// Afficher l'adresse e-mail dans un conteneur avec l'ID "emailContainer"
+				const emailContainer = document.getElementById("emailContainer");
+				emailContainer.textContent = userEmail;
+				
+				// Gérer l'affichage de l'adresse e-mail lorsque le bouton de compte est cliqué
+				accountButton.addEventListener("click", () => {
+					if (emailContainer.style.display === "none") {
+						emailContainer.style.display = "block";
+					} else {
+						emailContainer.style.display = "none";
+					}
+				});
+				
+				// Afficher le bouton de compte et de l'adresse e-mail
+				const userAccount = document.getElementById("userAccount");
+				userAccount.style.display = "block";
+			}
+		</script>
 	</body>
 </html>
