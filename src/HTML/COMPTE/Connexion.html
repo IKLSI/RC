@@ -23,9 +23,14 @@
 	</div>
 
 	<script type="module">
+		
+		// Déclaration des imports
+
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
 		import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
-
+		
+		// Configuration de firebase
+		
 		const firebaseConfig = {
 			apiKey: "AIzaSyCG9Z8p0T_WOETsa33_i6jUgm47rvpAxAM",
 			authDomain: "base-de-donnees-kls.firebaseapp.com",
@@ -37,10 +42,12 @@
 		};
 	
 		// Initialiser Firebase
+		
 		const app = initializeApp(firebaseConfig);
 		const auth = getAuth();
 	
 		// Gérer la soumission du formulaire de connexion
+		
 		const loginForm = document.getElementById("signupForm");
 		loginForm.addEventListener("submit", (e) => {
 			e.preventDefault();
@@ -58,7 +65,7 @@
 
 					// Redirection après 1 secondes
 					setTimeout(() => {
-						window.location.href = "../../../index.html";
+						window.close();
 					}, 1000);
 				})
 				.catch((error) => {
