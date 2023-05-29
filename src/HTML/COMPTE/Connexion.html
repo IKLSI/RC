@@ -60,6 +60,8 @@
 			signInWithEmailAndPassword(auth, email, password)
 				.then(() => {
 					// Connexion réussie
+					const userEmail = email;
+					window.opener.postMessage({ userEmail }, "*");
 					alert("Connexion réussie !");
 					loginForm.reset();
 
