@@ -139,6 +139,28 @@ a {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Personnalisation bouton de compte sur la page index */
+
+#userAccount {
+	display: none;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 9999;
+}
+  
+#accountButton {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+#emailContainer {
+	display: none;
+	margin-top: 10px;
+	text-align: center;
+}
+
 /* Personnalisation Menu */
 
 .Menu {
