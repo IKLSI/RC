@@ -107,7 +107,7 @@
 			<span class="lettre" id="username"></span>
 		</div>
 
-		<!-- Affichage des boutons de connexion et d'inscription avec renvoi vers la page correspondante -->
+		<!-- Affichage des boutons de connexion et d'inscription avec renvoi vers la page correspondante via fonction JS -->
 
 		<div class="container">
 			<div class="button-container">
@@ -116,13 +116,15 @@
 			</div>
 		</div>
 
+		<!-- Fonction de redirection après clic sur bouton connexion ou inscription -->
+		
 		<script>
 			function redirectToLogin() {
-			  window.location.href = "./src/HTML/COMPTE/Connexion.html";
+			  window.open"(./src/HTML/COMPTE/Connexion.html", "_BLANK");
 			}
 		
 			function redirectToSignUp() {
-			  window.location.href = "./src/HTML/COMPTE/Inscription.html";
+			  window.open"(./src/HTML/COMPTE/Inscription.html", "_BLANK");
 			}
 		</script>
 
