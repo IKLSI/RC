@@ -55,6 +55,10 @@
 					// Compte créé avec succès
 					alert("Votre compte a été créé avec succès !");
 					signupForm.reset();
+					
+					setTimeout(() => {
+						window.close();
+					}, 1000);
 				})
 				.catch((error) => {
 					// Une erreur s'est produite lors de la création du compte
