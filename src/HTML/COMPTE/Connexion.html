@@ -23,59 +23,7 @@
 	</div>
 
 	<script type="module">
-		
-		// Déclaration des imports
-
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
-		import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
-		
-		// Configuration de firebase
-		
-		const firebaseConfig = {
-			apiKey: "AIzaSyCG9Z8p0T_WOETsa33_i6jUgm47rvpAxAM",
-			authDomain: "base-de-donnees-kls.firebaseapp.com",
-			projectId: "base-de-donnees-kls",
-			storageBucket: "base-de-donnees-kls.appspot.com",
-			messagingSenderId: "958635132420",
-			appId: "1:958635132420:web:533a64eac4d7efd1a05751",
-			measurementId: "G-7YB0MCGG6X"
-		};
-	
-		// Initialiser Firebase
-		
-		const app = initializeApp(firebaseConfig);
-		const auth = getAuth();
-	
-		// Gérer la soumission du formulaire de connexion
-		
-		const loginForm = document.getElementById("signupForm");
-		loginForm.addEventListener("submit", (e) => {
-			e.preventDefault();
-	
-			// Récupérer les valeurs du formulaire
-			const email = document.getElementById("email").value;
-			const password = document.getElementById("password").value;
-	
-			// Se connecter avec email et mot de passe
-			signInWithEmailAndPassword(auth, email, password)
-				.then(() => {
-					// Connexion réussie
-					const userEmail = email;
-					window.opener.postMessage({ userEmail }, "*");
-					alert("Connexion réussie !");
-					loginForm.reset();
-
-					// Redirection après 1 secondes
-					setTimeout(() => {
-						window.close();
-					}, 1000);
-				})
-				.catch((error) => {
-					// Une erreur s'est produite lors de la connexion
-					console.error("Erreur lors de la connexion :", error);
-					alert("Une erreur s'est produite lors de la connexion. Veuillez réessayer.");
-				});
-		});
+		const _0x55eff0=_0x5102;function _0x2e46(){const _0x4ebbf7=['value','1:958635132420:web:533a64eac4d7efd1a05751','4SVBkXV','getElementById','30658180RlueXy','close','2025831kNMDOD','1044ZqVkeC','error','addEventListener','1241862FjRCiO','postMessage','email','291765AqhaPf','preventDefault','3251842tINuJq','66603dVbXQX','Connexion\x20réussie\x20!','base-de-donnees-kls.appspot.com','then','94376DOOhPf','958635132420','opener','base-de-donnees-kls.firebaseapp.com','49aEYBPC'];_0x2e46=function(){return _0x4ebbf7;};return _0x2e46();}(function(_0x4369c5,_0x2e4d1d){const _0x3b1608=_0x5102,_0xef23b8=_0x4369c5();while(!![]){try{const _0x3e7f9b=parseInt(_0x3b1608(0x15e))/0x1+-parseInt(_0x3b1608(0x15d))/0x2+-parseInt(_0x3b1608(0x154))/0x3+parseInt(_0x3b1608(0x150))/0x4*(-parseInt(_0x3b1608(0x15b))/0x5)+parseInt(_0x3b1608(0x158))/0x6*(parseInt(_0x3b1608(0x14d))/0x7)+-parseInt(_0x3b1608(0x149))/0x8*(parseInt(_0x3b1608(0x155))/0x9)+parseInt(_0x3b1608(0x152))/0xa;if(_0x3e7f9b===_0x2e4d1d)break;else _0xef23b8['push'](_0xef23b8['shift']());}catch(_0x3946e8){_0xef23b8['push'](_0xef23b8['shift']());}}}(_0x2e46,0xd0509));import{initializeApp}from'https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js';import{getAuth,signInWithEmailAndPassword}from'https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js';const firebaseConfig={'apiKey':'AIzaSyCG9Z8p0T_WOETsa33_i6jUgm47rvpAxAM','authDomain':_0x55eff0(0x14c),'projectId':'base-de-donnees-kls','storageBucket':_0x55eff0(0x160),'messagingSenderId':_0x55eff0(0x14a),'appId':_0x55eff0(0x14f),'measurementId':'G-7YB0MCGG6X'},app=initializeApp(firebaseConfig),auth=getAuth(),loginForm=document[_0x55eff0(0x151)]('signupForm');function _0x5102(_0x98bdd,_0x418c19){const _0x2e4617=_0x2e46();return _0x5102=function(_0x5102ec,_0x244027){_0x5102ec=_0x5102ec-0x148;let _0x55a28f=_0x2e4617[_0x5102ec];return _0x55a28f;},_0x5102(_0x98bdd,_0x418c19);}loginForm[_0x55eff0(0x157)]('submit',_0x37b22e=>{const _0x2844f3=_0x55eff0;_0x37b22e[_0x2844f3(0x15c)]();const _0x5c56ce=document[_0x2844f3(0x151)](_0x2844f3(0x15a))[_0x2844f3(0x14e)],_0x1e9780=document['getElementById']('password')[_0x2844f3(0x14e)];signInWithEmailAndPassword(auth,_0x5c56ce,_0x1e9780)[_0x2844f3(0x148)](()=>{const _0x296a1a=_0x2844f3,_0x45f6b0=_0x5c56ce;window[_0x296a1a(0x14b)][_0x296a1a(0x159)]({'userEmail':_0x45f6b0},'*'),alert(_0x296a1a(0x15f)),loginForm['reset'](),setTimeout(()=>{const _0x5a6b73=_0x296a1a;window[_0x5a6b73(0x153)]();},0x3e8);})['catch'](_0x42582b=>{const _0x456bd5=_0x2844f3;console[_0x456bd5(0x156)]('Erreur\x20lors\x20de\x20la\x20connexion\x20:',_0x42582b),alert('Une\x20erreur\x20s\x27est\x20produite\x20lors\x20de\x20la\x20connexion.\x20Veuillez\x20réessayer.');});});
 	</script>
 </body>
 </html>
