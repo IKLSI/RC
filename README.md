@@ -16,6 +16,8 @@ L'application utilise les technologies suivantes :
 
 3. Compte utilisateur : Les utilisateurs peuvent créer un compte et se connecter.
 
+4. Dépôt d'avis : Les utilisateurs ont également la possibilité de laisser un avis sans compte sur le site via un formulaire présent sur la partie supérieure du footer de la page d'accueil en cliquant sur le lien en rouge (les balises ne sont pas interprétées).
+
 ## Configuration de Firebase
 
 Le projet utilise Firebase comme base de données pour stocker les informations relatives au compte utilisateur ainsi que les commentaires apportés par les utilisateurs.
