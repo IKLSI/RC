@@ -34,7 +34,7 @@ var dayarray = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Ven
 var montharray = new Array(" janvier ", " février ", " mars ", " avril ", " mai ", " juin", " juillet ", " août ", " septembre ", " octobre ", " novembre ", " décembre ");
 
 // Afficher la date complète au format "Jour, jour du mois mois année"
-document.write("   " + dayarray[day] + ", " + daym + " " + montharray[month] + year + " ");
+document.write("   " + dayarray[day] + ", " + daym + " " + montharray[month] + " " + year + " ");
 
 // Fermeture de la balise
 document.write("</b></i></font>");
