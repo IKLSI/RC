@@ -117,11 +117,11 @@ a {
 
 /* Personnalisation menu création et connexion de compte */
 
-.button-container {
+.ensButton {
 	display: flex;
 	justify-content: space-between;
-  }
-  
+}
+
 .button {
 	width: 48%;
 	padding: 10px;
@@ -135,7 +135,7 @@ a {
 	transition: background-color 0.3s;
 }
 
-.container {
+.renvoi {
 	max-width: 400px;
 	margin: 0 auto;
 	background-color: var(--background);
@@ -146,34 +146,34 @@ a {
 
 /* Personnalisation bouton de compte sur la page index */
 
-#userAccount {
+#compte {
 	display: none;
 	position: fixed;
 	top: 20px;
 	left: 20px;
 	z-index: 9999;
 }
-  
-#accountButton {
+
+#compteButton {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
 }
 
-#emailContainer {
+#champEmail {
 	display: none;
 	margin-top: 10px;
 	text-align: center;
 }
 
-.speech-bubble {
+.forme {
 	position: relative;
 	padding: 10px;
 	border-radius: 10px;
 	background-color: #fff;
 }
 
-.speech-bubble:before {
+.forme:before {
 	content: '';
 	position: absolute;
 	bottom: -10px;
@@ -184,13 +184,13 @@ a {
 	transform: translateX(-50%);
 }
 
-.user-avatar {
+.avatar {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 }
 
-.user-avatar img {
+.avatar img {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
