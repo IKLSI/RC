@@ -3,23 +3,21 @@ body {
 	padding: 20px;
 	text-align: center;
 	font-family: Arial,sans-serif;
-	color: #fff;
+	color: #333;
 	background: url("https://raw.githubusercontent.com/gist/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/01151_inthedeep_2560x1600.jpg");
 	background-size: cover;
 }
 
-header {
-	padding: 20px;
-	text-align: center;
-	background-color: #333;
+h1 {
+	color: #fff;
 }
 
-.container {
+.zone_Saisie {
 	width: 80%;
-	margin: 50px auto;
+	margin: 10px auto;
 	padding: 20px;
-	border: 1px solid #333;
 	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -27,13 +25,11 @@ form {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
-	color: #fff; /* Couleur du texte dans le formulaire */
 }
 
 label {
 	margin-bottom: 5px;
 	font-weight: bold;
-	color: #fff; /* Couleur du texte des labels */
 }
 
 input[type="text"],
@@ -43,13 +39,13 @@ textarea {
 	border: none;
 	border-radius: 5px;
 	font-size: 16px;
-	color: #333; /* Couleur du texte des champs de texte */
-	background-color: rgba(255, 255, 255, 0.8) ; /* Couleur de fond avec une opacité */
+	color: #333;
+	background-color: rgba(255, 255, 255, 0.8);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	resize: none;
 }
 
-input[type="button"] {
+input[type="submit"] {
 	padding: 10px 20px;
 	border: none;
 	border-radius: 5px;
@@ -61,16 +57,14 @@ input[type="button"] {
 	cursor: pointer;
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
 	background-color: #555;
 }
 
 .message {
 	margin-bottom: 10px;
 	padding: 10px;
-	background-color: #eee;
 	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .message p {
@@ -80,9 +74,9 @@ input[type="button"]:hover {
 }
 
 #messages {
+	height: 300px;
 	margin-top: 20px;
 	padding: 10px;
-	height: 300px;
-	overflow-y: scroll;
-	color : black;
+	border-radius: 5px;
+	color: #fff;
 }
