@@ -11,19 +11,13 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Poppins',sans-serif;
+	font-family: 'Popins',sans-serif;
 	scroll-behavior: smooth;
 }
 
-/* Personnalisation Scroll Bar */
-
-::-webkit-scrollbar {
-	width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background: linear-gradient(0deg, brown, orange, green);
+@font-face {
+	font-family: w;
+	src: url("../FONT/WanoQuin-ExtraBold.otf");
 }
 
 /* Affichage au démarrage */
@@ -33,14 +27,14 @@
 	--background: #141414;
 }
 
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+
 /* Initialisation header | body | html*/
 
 header {
-	width: 60%;
-	height: 350px;
-	margin: auto;
-	background: url("../IMAGES/Banderole.png") center;
-	background-size: cover;
+	height: 150px;
 }
 
 header body html {
@@ -51,49 +45,70 @@ header body html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato',sans-serif;
 	color: #fff;
 	background: var(--background);
 }
 
-/* Thème Dark/Light */
-
-button {
-	border: #333;
-	background: #333;
+input[type="checkbox"] {
+	display: none;
+	visibility: hidden;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
-.changeTheme {
-	display: flex;
-	position: fixed;
-	top: 15px;
-	right: 15px;
-	align-items: center;
-	justify-content: center;
-	width: 65px;
-	height: 65px;
-	border: 3px solid red;
-	border-radius: 45%;
-	font-size: 14px;
-	color: #fff;
-	background: #333;
+.check {
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	background: black;
+	transition: ease-in 0.5s;
 	cursor: pointer;
+	margin-left: 185vh;
+	margin-top: 20px;
+	position: absolute;
 }
 
-.changeTheme:hover {
-	border: 3px solid darkgreen;
+input[type="checkbox"]:checked ~ .check {
+	background: #fff;
+	box-shadow: 0 0 0 2px #212121;
 }
 
-/* Personnalisation Titre h1 dans index */
+.check::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 0 0 0 #212121;
+	transition: ease-in 0.5s;
+}
 
-.Titre {
-	margin-top: 1.5%;
-	text-align: center;
-	-webkit-text-fill-color: transparent;
-	font-family: "Torus Notched";
-	font-size: 50px;
-	background: linear-gradient(to right, #36ecde, #109);
-	-webkit-background-clip: text;
+input[type="checkbox"]:checked ~ .check::before {
+	transform: translateX(-50px);
+}
+
+.check::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #212121;
+	box-shadow: 0 0 0 0 #212121;
+	transition: ease-in 0.5s;
+	transform: translateX(50px);
+}
+
+input[type="checkbox"]:checked ~ .check::after {
+	transform: translateX(0px);
 }
 
 /* Personnalisation Titre2 h1 dans Boutique | index_7 | index_8 */
@@ -118,14 +133,14 @@ h4 {
 h5,
 p {
 	margin-left: 0.7%;
-	font-family: "Arial Black";
 	font-size: 16px;
 	color: darkslategrey;
 }
 
 p {
-	font-family: "Courier,monospace";
-	font-size: 22px;
+	font-family: w;
+	font-size: 32px;
+	color: #7a7a7a;
 }
 
 .Stuff h5 {
@@ -319,22 +334,59 @@ iframe {
 /* Personnalisation pied de page */
 
 footer {
-	margin-top: 2%;
-	padding: 25px 100px;
+	padding: 20px;
 	text-align: center;
-	color: #828282;
-	background-color: #1a1a1a;
-	-webkit-user-select: none;
+	color: var(--ecriture);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+	margin-top: 2%;
 }
 
-footer p {
-	text-align: right;
-	text-decoration: none;
-	-webkit-text-fill-color: transparent;
-	font-family: "Arial Black";
-	font-size: 15px;
-	background: -webkit-linear-gradient(red, blue);
-	-webkit-background-clip: text;
+.contenu_Footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footer_Section {
+	flex: 1;
+	margin: 0 40px;
+	max-width: 300px;
+}
+
+.footer_Section h3 {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid cyan;
+	font-size: 16px;
+}
+
+.footer_Section p {
+	font-size: 14px;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	list-style: none;
+}
+
+.social-icons li {
+	margin: 0 10px;
+}
+
+.social-icons img {
+	width: 30px;
+	height: 30px;
+}
+
+.footer_Section p,
+.social-icons a {
+	color: #fff;
+}
+
+.footer_Section a:hover {
+	opacity: 0.7;
 }
 
 .Partie_Gauche {
@@ -391,6 +443,67 @@ footer p {
 	margin-bottom: 3%;
 	margin-left: 50%;
 	animation: down 1s infinite linear alternate;
+}
+
+/* Personnalisation carousel d'image et contenu */
+
+.carousel-container {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel-slide {
+	display: none;
+	flex-shrink: 0;
+	align-items: center;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	transition: opacity 0.5s;
+}
+
+.carousel-slide h3 {
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+.carousel-slide img {
+	width: 500px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-slide.active {
+	display: block;
+	opacity: 1;
+}
+
+.carousel-navigation {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.carousel-bullet {
+	width: 12px;
+	height: 12px;
+	margin: 0 5px;
+	border-radius: 50%;
+	background-color: #333;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+.carousel-bullet.active {
+	background-color: #ccc;
+}
+
+.car1 img {
+	width: 600px;
+	height: 300px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Media screen --> Ajustement pour téléphone */

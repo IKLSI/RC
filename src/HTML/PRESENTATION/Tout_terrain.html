@@ -16,13 +16,7 @@
 
 		<!-- Bouton pour changer de thème sombre / clair -->
 
-		<div class="changeTheme">
-			<button>🔆 | 🌙</button>
-		</div>
-
 		<!-- Appel du script en JS permettant ce changement -->
-
-		<script src="../../JS/Mod.js"></script>
 		<header>
 
 			<!-- Bouton de menu -->
@@ -30,6 +24,15 @@
 			<div class="btn">
 				<span class="fas fa-bars"></span>
 			</div>
+
+			<a>
+				<label>
+					<input type="checkbox" id="themeCheckbox">
+					<span class="check"></span>
+				</label>
+			</a>
+
+			<script src="../../JS/Mod.js"></script>
 
 			<!-- Menu de navigation -->
 
@@ -73,7 +76,6 @@
 
 			<script src="../../JS/Menu.js"></script>
 		</header>
-		<hr class="hr_Header"><br>
 
 		<!-- Présentation -->
 
@@ -82,9 +84,20 @@
 		<div id="Voiture_1">
 			<p>Echelle 1/5</p>
 			<h5>Traxxas XMAXX</h5><br>
-			<img class="Image_Droite" src="https://www.miniplanes.fr/images/products/448350/x_maxx-brushless-tsm-15-trx77086_4_grnx-12.png" alt="Traxxas XMAXX" width="600" height="300"/>
-			<img class="Image_Gauche" src="https://i.ytimg.com/vi/D4P0935cNyA/maxresdefault.jpg" alt="Traxxas XMAXX" width="600" height="300"/><br>
-			<img class="Image_centre" src="https://www.mrcmodelisme.com/wp-content/uploads/2021/06/X-Maxx.gif" alt="GIF Traxxas XMAXX" width="600" height="300"/>
+
+		<div class="carousel">
+			<div class="carousel-container">
+				<div class="carousel-slide car1">
+					<img src="https://i.ytimg.com/vi/D4P0935cNyA/maxresdefault.jpg" alt="Moteur">
+				</div>
+				<div class="carousel-slide car1">
+					<img src="https://www.mrcmodelisme.com/wp-content/uploads/2021/06/X-Maxx.gif" alt="Châssis">
+				</div>
+			</div>
+			<div class="carousel-navigation">
+				<div class="carousel-bullet active" onclick="showSlide(0)"></div>
+				<div class="carousel-bullet" onclick="showSlide(1)"></div>
+			</div>
 			<h6>
 				Le XMAXX est le 4x4 le plus puissant et solide qui existe, sa taille gigantesque et son innovation technique font de cette voiture le Monster Truck par excellence.<br>
 				Moteur :
@@ -106,6 +119,9 @@
 				</ul>
 			</h6>
 		</div>
+		</div>
+
+		<script src="../../JS/Carousel.js"></script>
 
 		<hr>
 

@@ -7,20 +7,10 @@
 		<title>RC Car</title>
 		<meta name="author" content="Kyliann 'KLS'">
 		<link href="./src/IMAGES/Icone.png" rel="icon" type="image/x-icon">
-		<link rel="stylesheet" href="./src/CSS/CSS.css">
 		<link rel="stylesheet" href="./src/CSS/Menu_CSS_Accueil.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	</head>
 	<body>
-
-		<!-- Bouton pour changer de thème sombre / clair -->
-
-		<div class="changeTheme">
-			<button>🔆 | 🌙</button>
-		</div>
-
-		<!-- Appel du script en JS permettant ce changement -->
-
-		<script src="./src/JS/Mod.js"></script>
 
 		<!-- Première section affichant la premère image dans la partie déroulante -->
 
@@ -33,154 +23,113 @@
 		<!-- Troisième section affichant la troisième image dans la partie déroulante -->
 
 		<section class="Troisieme"></section>
-		<header>
 
-			<!-- Menu de navigation à travers les différentes pages sur la partie supérieure en dessous des images déroulantes -->
-			
+		<header>
 			<nav class="Menu">
-				<ul>
+				<span class="Action"></span>
+				<div class="Logo">RC</div>
+				<ul class="Contenu">
 					<li>
-						<a href="./src/HTML/PRESENTATION/Tout_terrain.html" target="_BLANK" title="Tout-Terrain">Tout-terrain</a>
-						<ul class="Sous-menu">
-							<li>
-								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_1" target="_BLANK" title="Traxxas XMAXX">XMAXX</a>
-								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_2" target="_BLANK" title="Arrma Outcast 8S">Outcast</a>
-								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_3" target="_BLANK" title="Arrma Mojave">Mojave</a>
-								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_4" target="_BLANK" title="Traxxas Sledge">Sledge</a>
-								<a href="./src/HTML/PRESENTATION/Tout_terrain.html#Voiture_5" target="_BLANK" title="Hobao Hyper VS">Hyper VS</a>
-							</li>
-						</ul>
+						<a href="./src/HTML/PRESENTATION/Tout_terrain.html" title="Tout-Terrain" data-text="ToutTerrain">Tout-terrain</a>
 					</li>
 					<li>
-						<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html" target="_BLANK" title="Tout-terrain 2WD">Tout-terrain 2WD</a>
-						<ul class="Sous-menu_1">
-							<li>
-								<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html#Voiture_1" target="_BLANK" title="Kyosho Scorpion">Scorpion</a>
-								<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html#Voiture_2" target="_BLANK" title="Schumacher Cougar KF">Cougar KF</a>
-								<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html#Voiture_3"target="_BLANK" title="Traxxas Stampede">Stampede</a>
-							</li>
-						</ul>
+						<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html" title="Tout-Terrain 2WD" data-text="ToutTerrain2WD">Tout-terrain 2WD</a>
 					</li>
 					<li>
-						<a href="./src/HTML/PRESENTATION/Crawler.html" target="_BLANK" title="Crawlers">Crawlers</a>
-						<ul class="Sous-menu_2">
-							<li>
-								<a href="./src/HTML/PRESENTATION/Crawler.html#Voiture_1" target="_BLANK" title="Traxxas TRX-4">TRX-4</a>
-							</li>
-						</ul>
+						<a href="./src/HTML/PRESENTATION/Crawler.html" title="Crawlers" data-text="Crawlers">Crawlers</a>
 					</li>
 					<li>
-						<a href="./src/HTML/PRESENTATION/Drift.html" target="_BLANK" title="Piste-Drift">Drift 2WD</a>
-						<ul class="Sous-menu_3">
-							<li>
-								<a href="./src/HTML/PRESENTATION/Drift.html#Voiture_1" target="_BLANK" title="Yokomo YD2R-Plus">YD2R-Plus</a>
-								<a href="./src/HTML/PRESENTATION/Drift.html#Voiture_2" target="_BLANK" title="MST RMX 2.0S">RMX 2.0S</a>
-							</li>
-						</ul>
+						<a href="./src/HTML/PRESENTATION/Drift.html" title="Piste-Drift" data-text="Drift2WD">Drift 2WD</a>
 					</li>
 					<li>
-						<a href="./src/HTML/PRESENTATION/Piste.html" target="_BLANK" title="Piste-Drift">Piste 4WD</a>
-						<ul class="Sous-menu_4">
-							<li>
-								<a href="./src/HTML/PRESENTATION/Piste.html#Voiture_1" target="_BLANK" title="Arrma Limitless, Felony">Limitless V2</a>
-								<a href="./src/HTML/PRESENTATION/Piste.html#Voiture_2" target="_BLANK" title="Arrma Limitless, Felony">Felony</a>
-								<a href="./src/HTML/PRESENTATION/Piste.html#Voiture_3" target="_BLANK" title="Kyosho Fazer MK2">Fazer MK2</a>
-							</li>
-						</ul>
+						<a href="./src/HTML/PRESENTATION/Piste.html" title="Piste-Drift" data-text="Piste4WD">Piste 4WD</a>
+					</li>
+					<li class="Icone">
+						<a href="./src/HTML/COMPTE/Connexion.html" title="Connexion" data-text="Connexion">
+							<i class="fas fa-user"></i>
+						</a>
+					</li>
+					<li>
+						<a href="./src/HTML/PRODUIT/indexBoutique.html" title="Connexion" data-text="Connexion">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</li>
+					<li>
+						<a>
+							<label>
+								<input type="checkbox" id="themeCheckbox">
+								<span class="check"></span>
+							</label>
+						</a>
 					</li>
 				</ul>
+				<div class="btn">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+					</svg>
+				</div>
 			</nav>
-		</header><br>
-
-		<!-- Affichage du message BIENVENUE avec défilement des lettres en surbrillance -->
-
-		<div class="Bienvenue">
-			<span class="lettre">B</span>
-			<span class="lettre">I</span>
-			<span class="lettre">E</span>
-			<span class="lettre">N</span>
-			<span class="lettre">V</span>
-			<span class="lettre">E</span>
-			<span class="lettre">N</span>
-			<span class="lettre">U</span>
-			<span class="lettre">E&nbsp;</span>
-			<!-- <span class="lettre" id="username"></span> -->
-		</div>
-
-		<!-- Affichage des boutons de connexion et d'inscription avec renvoi vers la page correspondante via fonction JS -->
-
-		<div class="renvoi">
-			<div class="ensButton">
-				<button class="button" onclick="redirectionConnexion()">Connexion</button>
-				<button class="button" onclick="redirectionInscription()">S'inscrire</button>
-			</div>
-		</div>
-
-		<!-- Fonction de redirection après clic sur bouton connexion ou inscription -->
-		
-		<script>
-			function redirectionConnexion() {
-				window.open("./src/HTML/COMPTE/Connexion.html", "_BLANK");
-			}
-	
-			function redirectionInscription() {
-				window.open("./src/HTML/COMPTE/Inscription.html", "_BLANK");
-			}
-		</script>
-
-		<!-- Appel du script en JS permettant l'affichage du pseudo utilisateur -->
-		
-		<!-- <script src="./src/JS/Prompt.js"></script> -->
+		</header>
 
 		<!-- Titre principal -->
 
-		<h1 class="Titre">CE SITE EST DEDIÉ A LA PRÉSENTATION DE NOS VOITURES RC</h1><br>
+		<h4 class="Titre">RC'MOD</h4>
 
-		<!-- Volet de défilement d'images  -->
-
-		<div id="Volet_Accueil">
-			<div class="Images_Acceuil">
-				<img src="https://www.mrcmodelisme.com/wp-content/uploads/2020/10/90076-4-Hoss-4x4-VXL-GREEN-Dirt-Wheelie-1312-1143x800.jpg" alt="Traxxas Hoss" width="572" height="400">
-				<img src="https://www.lindinger.at/media/68/d0/46/1639122807/89086-4-Maxx-Action-ORNG-D1614.jpg" alt="Traxxas MAXX V2" width="572" height="400">
-				<img src="https://cdn.shopify.com/s/files/1/0263/8469/5395/files/Traxxas-X-maxx-review-jumping-each-other.gif" alt="GIF Traxxas XMAXX" width="572" height="400">
-				<img src="https://www.eurorc.fr/tuotekuvat/1200x1200/RYVUEF6QQE8CGBD9NE4EX3MFEQV2WZNP6828K9JBCFAJAMHDGJ.jpg" alt="ARRMA Kraton" width="572" height="400">
-				<img src="https://mikanews.de/wp-content/uploads/2019/09/ARA106058-Action-12.jpg" alt="ARRMA Mojave" width="572" height="400">
+		<div class="cartes-container">
+			<div class="carte">
+				<img src="https://i.pinimg.com/originals/6a/44/61/6a4461655b258fe365da255ff30e9b91.jpg" alt="Image 1">
+				<h5>Présentation</h5>
+				<p>Ici, vous pourrez découvrir une sélection de modèles de voitures radiocommandées, classées par catégories.</p>
+				<p>Voir plus <i class="fas fa-arrow-right"></i></p>
+			</div>
+			<div class="carte">
+				<img src="https://rcmester.no/assets/img/1024/1024/bilder_nettbutikk/c5afc8572606283478074af7f1b6eaeb-image.jpeg" alt="Image 2">
+				<h5>Spécificités</h5>
+				<p>Chaque modèle est accompagné d'une fiche descriptive détaillée, comprenant des informations sur les spécifications.</p>
+				<p>Voir plus <i class="fas fa-arrow-right"></i></p>
+			</div>
+			<div class="carte">
+				<img src="https://cdn.futura-sciences.com/sources/images/e-shop.jpeg" alt="Image 3">
+				<h5>Boutique</h5>
+				<p>Vous pourrez également retrouver une boutique en ligne, proposant des modèles de voitures radiocommandées.</p>
+				<p>Voir plus <i class="fas fa-arrow-right"></i></p>
 			</div>
 		</div>
-		<h4>Ici, vous pourrez découvrir une sélection de modèles de voitures radiocommandées, classées par catégories. Chaque modèle est accompagné d'une fiche descriptive détaillée, comprenant des informations sur les spécifications techniques, les performances et un lien vers une boutique en ligne</h4><br>
-		<h4>Que vous soyez un passionné de voitures RC ou que vous cherchiez simplement des informations sur ces modèles, nous espérons que notre site vous sera utile et informatif.</h4>
 
-		<h4>
-			<a href="./src/HTML/COMPTE/Avis.html" class="Avis" target="_BLANK" title="Avis">Merci de nous laisser un avis si vous avez apprécié notre site</a>
-		</h4>
+		<h4 class="SousTitre">Que vous soyez un passionné de voitures RC ou que vous cherchiez simplement des informations sur ces modèles, nous espérons que notre site vous sera utile et informatif.</h4>
 
 		<!-- Pied de page -->
 
 		<footer>
-
-			<!-- Script pour l'affichage de la date journalière -->
-
-			<script src="./src/JS/Date.js"></script>
-			<p class="Bas_page">
-				<a href="./src/HTML/PRODUIT/indexBoutique.html" title="Stuff" target="_BLANK">Boutique</a>
-			</p>
-			<p>&copy; KLS</p>
-		</footer>
-		
-		<!-- Partie pour l'affichage du compte utilisateur -->
-
-		<div id="compte">
-			<div class="forme">
-				<div class="avatar">
-					<button id="compteButton"></button>
-					<div id="champEmail"></div>
-					<input id="compteImg" type="file"/>
+			<div class="contenu_Footer">
+				<div class="footer_Section">
+					<h3>Réseaux sociaux</h3>
+					<ul class="social-icons">
+						<li>
+							<a href="https://github.com/IKLSI" target="_BLANK">
+								<img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="Logo Github">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK">
+								<img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="Logo Linkedin">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_Section">
+					<h3>Contact</h3>
+					<p>
+						<i class="fas fa-map-marker-alt"></i>
+						<span>France</span>
+					</p>
 				</div>
 			</div>
-		</div>
-			
+		</footer>
+
 		<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
+		<script src="./src/JS/Mod.js"></script>
 
 		<script>
 			function _0x47c9(_0x213e35,_0x47ced5){const _0x1d34dd=_0x1d34();return _0x47c9=function(_0x47c9d8,_0x3a9d36){_0x47c9d8=_0x47c9d8-0x80;let _0xf40c12=_0x1d34dd[_0x47c9d8];return _0xf40c12;},_0x47c9(_0x213e35,_0x47ced5);}const _0x569b8d=_0x47c9;function _0x1d34(){const _0x54951d=['9ngKyhz','1644EBdtMp','G-7YB0MCGG6X','213OnVmqA','initializeApp','624ZBXjLx','958635132420','base-de-donnees-kls.firebaseapp.com','1560512EqHYIZ','6100uUzoRT','base-de-donnees-kls','base-de-donnees-kls.appspot.com','1:958635132420:web:533a64eac4d7efd1a05751','6628gWLZff','658347NtIOrD','118846eYVxXo','AIzaSyCG9Z8p0T_WOETsa33_i6jUgm47rvpAxAM','478753QVIxWk','2455810aFVMXv','24AdRVYq'];_0x1d34=function(){return _0x54951d;};return _0x1d34();}(function(_0x3848e6,_0x39dec7){const _0x5e47ff=_0x47c9,_0x58e605=_0x3848e6();while(!![]){try{const _0x20dfbd=-parseInt(_0x5e47ff(0x85))/0x1+-parseInt(_0x5e47ff(0x84))/0x2*(parseInt(_0x5e47ff(0x8e))/0x3)+-parseInt(_0x5e47ff(0x8c))/0x4*(parseInt(_0x5e47ff(0x80))/0x5)+-parseInt(_0x5e47ff(0x8a))/0x6*(parseInt(_0x5e47ff(0x86))/0x7)+-parseInt(_0x5e47ff(0x93))/0x8+parseInt(_0x5e47ff(0x8b))/0x9*(-parseInt(_0x5e47ff(0x89))/0xa)+parseInt(_0x5e47ff(0x88))/0xb*(parseInt(_0x5e47ff(0x90))/0xc);if(_0x20dfbd===_0x39dec7)break;else _0x58e605['push'](_0x58e605['shift']());}catch(_0x35897c){_0x58e605['push'](_0x58e605['shift']());}}}(_0x1d34,0x57c9a));const firebaseConfig={'apiKey':_0x569b8d(0x87),'authDomain':_0x569b8d(0x92),'projectId':_0x569b8d(0x81),'storageBucket':_0x569b8d(0x82),'messagingSenderId':_0x569b8d(0x91),'appId':_0x569b8d(0x83),'measurementId':_0x569b8d(0x8d)};firebase[_0x569b8d(0x8f)](firebaseConfig);
@@ -188,16 +137,6 @@
 
 		<script>
 			function _0x431c(){const _0x4222df=['674876auGnOG','block','135784UYugmk','none','2LfDMHA','3140940LarcZU','315910VmDLxC','style','champEmail','6qEayhy','compteButton','innerHTML','<img\x20id=\x22imgProfil\x22\x20src=\x22https://winaero.com/blog/wp-content/uploads/2018/08/Windows-10-user-icon-big.png\x22\x20alt=\x22Image\x20de\x20profil\x22\x20width=\x2240\x22\x20height=\x2240\x22>','display','click','getElementById','message','textContent','3706908xfyxgz','data','531iDreSB','24969940euEqgK','addEventListener','117861hYCmBi','userEmail','getItem'];_0x431c=function(){return _0x4222df;};return _0x431c();}const _0x344692=_0x5896;function _0x5896(_0x560250,_0x4188e4){const _0x431c02=_0x431c();return _0x5896=function(_0x589642,_0x2466f3){_0x589642=_0x589642-0xc2;let _0x220e2e=_0x431c02[_0x589642];return _0x220e2e;},_0x5896(_0x560250,_0x4188e4);}(function(_0x2fe08f,_0x5450c3){const _0x43fbb5=_0x5896,_0x39a92f=_0x2fe08f();while(!![]){try{const _0x402af5=parseInt(_0x43fbb5(0xc4))/0x1+-parseInt(_0x43fbb5(0xcb))/0x2*(-parseInt(_0x43fbb5(0xd9))/0x3)+parseInt(_0x43fbb5(0xc7))/0x4+parseInt(_0x43fbb5(0xcc))/0x5+parseInt(_0x43fbb5(0xd0))/0x6*(parseInt(_0x43fbb5(0xcd))/0x7)+-parseInt(_0x43fbb5(0xc9))/0x8*(-parseInt(_0x43fbb5(0xdb))/0x9)+-parseInt(_0x43fbb5(0xc2))/0xa;if(_0x402af5===_0x5450c3)break;else _0x39a92f['push'](_0x39a92f['shift']());}catch(_0x55a2bb){_0x39a92f['push'](_0x39a92f['shift']());}}}(_0x431c,0xaae2b),window[_0x344692(0xc3)](_0x344692(0xd7),_0x3cab88=>{const _0x183c4a=_0x344692;_0x3cab88[_0x183c4a(0xda)]&&_0x3cab88['data'][_0x183c4a(0xc5)]&&(localStorage['setItem'](_0x183c4a(0xc5),_0x3cab88[_0x183c4a(0xda)][_0x183c4a(0xc5)]),document[_0x183c4a(0xd6)](_0x183c4a(0xc5))[_0x183c4a(0xd8)]=_0x3cab88[_0x183c4a(0xda)][_0x183c4a(0xc5)]);}));const userEmail=localStorage[_0x344692(0xc6)](_0x344692(0xc5));if(userEmail){const compteButton=document[_0x344692(0xd6)](_0x344692(0xd1));compteButton[_0x344692(0xd2)]=_0x344692(0xd3);const champEmail=document[_0x344692(0xd6)](_0x344692(0xcf));champEmail[_0x344692(0xd8)]=userEmail,compteButton['addEventListener'](_0x344692(0xd5),()=>{const _0x104f59=_0x344692;champEmail[_0x104f59(0xce)][_0x104f59(0xd4)]===_0x104f59(0xca)?champEmail[_0x104f59(0xce)][_0x104f59(0xd4)]=_0x104f59(0xc8):champEmail[_0x104f59(0xce)][_0x104f59(0xd4)]=_0x104f59(0xca);});const compte=document[_0x344692(0xd6)]('compte');compte[_0x344692(0xce)][_0x344692(0xd4)]=_0x344692(0xc8);}
-		</script>
-
-		<!-- Script permettant de changer l'image de profil du compte utilisateur -->
-
-		<script>
-			var file = document.getElementById("compteImg");
-			var img = document.getElementById("imgProfil");
-			file.addEventListener("change", e => {
-				img.src = URL.createObjectURL(e.target.files[0]);
-			});
 		</script>
 	</body>
 </html>

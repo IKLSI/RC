@@ -1,23 +1,23 @@
-// Sélectionne l'élément avec la classe 'changeTheme' et le stocke dans la variable 'switchThemeBtn'
-const switchThemeBtn = document.querySelector('.changeTheme');
+// Sélectionnez le bouton de type checkbox
+const themeCheckbox = document.getElementById('themeCheckbox');
 
-// Variable pour le basculement du thème (0: thème clair, 1: thème sombre)
-let toggleTheme = 0;
-
-// Ajoute un écouteur d'événement de clic à l'élément 'switchThemeBtn'
-switchThemeBtn.addEventListener('click', () => {
-	// Vérifie l'état actuel du thème
-	if (toggleTheme === 0) {
-		// Si le thème est actuellement clair, modifie les propriétés CSS pour le thème sombre
+// Fonction pour mettre à jour les propriétés CSS en fonction du thème
+function updateThemeColors(theme) {
+	if (theme === 'dark') {
+		// Thème sombre
 		document.documentElement.style.setProperty('--ecriture', '#262626');
-		document.documentElement.style.setProperty('--background', '#F5F5DC');
-		// Incrémente la variable 'toggleTheme' pour basculer le thème
-		toggleTheme++;
+		document.documentElement.style.setProperty('--background', '#FFF');
 	} else {
-		// Si le thème est actuellement sombre, modifie les propriétés CSS pour le thème clair
-		document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
+		// Thème clair
+		document.documentElement.style.setProperty('--ecriture', '#FFF');
 		document.documentElement.style.setProperty('--background', '#141414');
-		// Décrémente la variable 'toggleTheme' pour basculer le thème
-		toggleTheme--;
 	}
+}
+
+// Ajoutez un écouteur d'événement de changement au bouton checkbox
+themeCheckbox.addEventListener('change', () => {
+	const isChecked = themeCheckbox.checked;
+	const selectedTheme = isChecked ? 'dark' : 'light';
+	// Met à jour les propriétés CSS en fonction de l'état de la case à cocher
+	updateThemeColors(selectedTheme);
 });
