@@ -1,4 +1,4 @@
-# Présentation de Voiture RC
+# Présentation de Voiture RC - Actuellement en cours d'amélioration
 
 Ce projet est une application web dédié à la la présentation de voitures radiocommandées (RC). Il permet aux utilisateurs de visualiser différentes voitures RC disponibles ainsi que leurs caractéristiques.
 
