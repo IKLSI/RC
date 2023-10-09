@@ -1,0 +1,166 @@
+<!-- Index principale -->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>RC Car</title>
+		<meta name="author" content="Kyliann 'KLS'">
+		<link href="https://cdn-icons-png.flaticon.com/256/1967/1967900.png" rel="icon" type="image/x-icon">
+		<link rel="stylesheet" href="./src/CSS/Menu_CSS_Accueil.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- Première section affichant la premère image dans la partie déroulante -->
+
+		<section class="Premiere"></section>
+
+		<!-- Deuxième section affichant la deuxième image dans la partie déroulante -->
+
+		<section class="Seconde"></section>
+
+		<header>
+			<nav class="Menu">
+				<span class="Action"></span>
+				<div class="Logo">RC</div>
+				<ul class="Contenu">
+					<li class="Actif">
+						<a href="./src/HTML/PRESENTATION/Tout_terrain.html" title="Tout-Terrain" data-text="ToutTerrain">Tout-terrain</a>
+					</li>
+					<li class="Actif">
+						<a href="./src/HTML/PRESENTATION/Tout_terrain_2WD.html" title="Tout-Terrain 2WD" data-text="ToutTerrain2WD">Tout-terrain 2WD</a>
+					</li>
+					<li class="Actif">
+						<a href="./src/HTML/PRESENTATION/Crawler.html" title="Crawlers" data-text="Crawlers">Crawlers</a>
+					</li>
+					<li class="Actif">
+						<a href="./src/HTML/PRESENTATION/Drift.html" title="Piste-Drift" data-text="Drift2WD">Drift 2WD</a>
+					</li>
+					<li class="Actif">
+						<a href="./src/HTML/PRESENTATION/Piste.html" title="Piste-Drift" data-text="Piste4WD">Piste 4WD</a>
+					</li>
+					<li class="Icone">
+						<a href="./src/HTML/COMPTE/Connexion.html" title="Connexion" data-text="Connexion">
+							<i class="fas fa-user"></i>
+							<div id="userEmail"></div>
+						</a>
+					</li>
+					<li>
+						<a href="./src/HTML/PRODUIT/indexBoutique.html" title="Connexion" data-text="Connexion">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</li>
+					<li>
+						<a>
+							<label class="checkbox-label">
+								<input type="checkbox" id="themeCheckbox">
+								<span class="check"></span>
+							</label>
+						</a>
+			
+						<script src="../../JS/Mod.js"></script>
+					</li>
+				</ul>
+				<div class="btn">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+					</svg>
+				</div>
+			</nav>
+		</header>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				// Récupérer l'email depuis le localStorage
+				const userEmail = localStorage.getItem('userEmail');
+	
+				if (userEmail) {
+					// Afficher l'email sous le logo
+					const userEmailElement = document.getElementById('userEmail');
+					userEmailElement.textContent = userEmail;
+				}
+			});
+		</script>
+
+		<h1 class="Titre">INFORMATIONS</h1>
+		<hr>
+
+		<div class="cartes-container">
+			<div class="carte">
+				<img src="https://i.pinimg.com/originals/6a/44/61/6a4461655b258fe365da255ff30e9b91.jpg" alt="Image 1">
+				<h5>Présentation</h5>
+				<p>Ici, vous pourrez découvrir une sélection de modèles de voitures radiocommandées, classées par catégories.</p>
+				<p>Voir plus <i class="fa-solid fa-arrow-right"></i>
+			</div>
+			<div class="carte">
+				<img src="https://rcmester.no/assets/img/1024/1024/bilder_nettbutikk/c5afc8572606283478074af7f1b6eaeb-image.jpeg" alt="Image 2">
+				<h5>Spécificités</h5>
+				<p>Chaque modèle est accompagné d'une fiche descriptive détaillée, comprenant des informations sur les spécifications.</p>
+				<p>Voir plus <i class="fas fa-arrow-right"></i></p>
+			</div>
+			<div class="carte">
+				<img src="https://cdn.futura-sciences.com/sources/images/e-shop.jpeg" alt="Image 3">
+				<h5>Boutique</h5>
+				<p>Vous pourrez également retrouver une boutique en ligne, proposant des modèles de voitures radiocommandées.</p>
+				<p>Voir plus <i class="fas fa-arrow-right"></i></p>
+			</div>
+		</div>
+
+		<h1 class="Titre">MODÈLE</h1>
+		<hr>
+		<div class="cartes-container2">
+			<div class="carte">
+				<img src="https://www.elitedriftshop.com/wp-content/uploads/2020/04/DP-YD2S-1.jpg" alt="Image 1">
+				<h5>Yokomo YD2S</h5>
+				<p>Véhicule de drift indiqué au prix de 200€.</p>
+				<p>Voir plus <i class="fa-solid fa-arrow-right"></i>
+			</div>
+			<div class="carte">
+				<img src="https://m.traxxas.com/sites/default/files/7895G-WideMaxx-Kit-for-X-Maxx-Action-D3272@1x.jpg" alt="Image 2">
+				<h5>Traxxas XMAXX</h5>
+				<p>Véhicule tout-terrain indiqué au prix de 900€.</p>
+				<p>Voir plus <i class="fas fa-arrow-right"></i></p>
+			</div>
+			<div class="carte">
+				<img src="https://www.ryeskovracing.dk/wp-content/uploads/2022/03/TRX95076-4-BLUE_13.jpg" alt="Image 3">
+				<h5>Traxxas Sledge</h5>
+				<p>Véhicule tout-terrain indiqué au prix de 700€.</p>
+				<p>Voir plus <i class="fas fa-arrow-right"></i></p>
+			</div>
+		</div>
+
+		<h4 class="SousTitre">Que vous soyez un passionné de voitures RC ou que vous cherchiez simplement des informations sur ces modèles, nous espérons que notre site vous sera utile et informatif.</h4>
+
+		<!-- Pied de page -->
+
+		<footer>
+			<div class="contenu_Footer">
+				<div class="footer_Section">
+					<h3>Réseaux sociaux</h3>
+					<ul class="social-icons">
+						<li>
+							<a href="https://github.com/IKLSI" target="_BLANK">
+								<img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="Logo Github">
+							</a>
+						</li>
+						<li class="Linkedin">
+							<a href="https://www.linkedin.com/in/kyliann-levesque-87711a277/" target="_BLANK">
+								<img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="Logo Linkedin">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_Section">
+					<h3>Contact</h3>
+					<p>
+						<i class="fas fa-map-marker-alt"></i>
+						<span>France</span>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script src="./src/JS/Mod.js"></script>
+	</body>
+</html>

@@ -1,0 +1,279 @@
+/* CSS Page Produit */
+
+/* Selecteur universel */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: sans-serif;
+	background-color: white;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 80px 15px 50px 15px;
+	max-width: 1480px;
+}
+
+.container .left {
+	max-width: 900px;
+}
+
+.container .left .Produit_Principal img {
+	width: 500px;
+	height: 250px;
+	margin-top: 1%;
+	border-radius: 15px;
+	margin-left: 20%;
+}
+
+.container .right {
+	max-width: 500px;
+}
+
+.container .right .Bloc {
+	position: sticky;
+	padding: 25px 25px 12px 25px;
+	border-radius: 8px;
+	box-shadow: 0 0 30px 0 #d6d6d6;
+}
+
+.container .right h1 {
+	margin-bottom: 12px;
+	font-size: 2em;
+	font-weight: 700;
+	color: #141414;
+}
+
+.container .right .Fournisseur p {
+	margin-bottom: 17px;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	font-weight: 600;
+	color: pink;
+}
+
+.container .right .Fournisseur p span {
+	color: #0070ba;
+}
+
+.container .right .Prix .Price {
+	font-size: 1.6em;
+	font-weight: 700;
+}
+
+.container .right .Description {
+	margin: 25px 0;
+	text-align: justify;
+	font-weight: 500;
+	font-weight: bold;
+	line-height: 1.5em;
+	color: #141414;
+}
+
+.Legende {
+	text-align: center;
+	font-weight: 500;
+	font-weight: bold;
+	line-height: 1.5em;
+	color: #141414;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 2%;
+}
+
+.Produit {
+	box-sizing: border-box;
+	margin-left: 5%;
+	padding: 10px;
+	border: 2px solid darkred;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #1a1a1a;
+}
+
+.Produit p {
+	box-sizing: border-box;
+	padding: 10px;
+	border: 2px solid darkred;
+	text-align: center;
+	color: mintcream;
+	background-color: #1a1a1a;
+}
+
+a {
+	text-decoration: none;
+	color: #141414;
+}
+
+h2 {
+	margin: 25px 0;
+	text-align: justify;
+	font-weight: 500;
+	font-weight: bold;
+	line-height: 1.5em;
+	color: darkred;
+	text-align: center;
+	font-size: 18px;
+}
+
+h6 {
+	text-transform: uppercase;
+	font-family: Crimson Text;
+	font-size: 15px;
+}
+
+.Stock {
+	margin: 25px 0;
+	text-align: justify;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	font-weight: bold;
+	line-height: 1.5em;
+	color: seagreen;
+}
+
+.Produit_Principal img {
+	width: 100px;
+	height: 200px;
+}
+
+/* Personnalisation pied de page */
+
+footer {
+	padding: 20px;
+	text-align: center;
+	color: var(--ecriture);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+	margin-top: 2%;
+}
+
+.contenu_Footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footer_Section {
+	flex: 1;
+	margin: 0 40px;
+	max-width: 300px;
+}
+
+.footer_Section h3 {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid cyan;
+	font-size: 16px;
+}
+
+.footer_Section p {
+	font-size: 14px;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	list-style: none;
+}
+
+.social-icons li {
+	margin: 0 10px;
+}
+
+.social-icons img {
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.social-icons .Linkedin {
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 20%;
+}
+
+.footer_Section p,
+.social-icons a {
+	color: #fff;
+}
+
+.footer_Section a:hover {
+	opacity: 0.7;
+}
+
+li { list-style: none; }
+
+span {
+	text-decoration: none;
+	color: black;
+}
+
+.Bande {
+	float: left;
+	width: 5%;
+	height: 1000px;
+	background-color: #1a1a1a;
+
+}
+
+.fa-map-marker-alt {
+	color: black; /* Changer la couleur en noir */
+}
+
+/* Media screen */
+
+@media screen and (max-width:1280px) {
+	.container .left {
+		max-width: 650px;
+	}
+}
+
+@media screen and (max-width:1100px) {
+	.container .left {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width:991px) {
+	.container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container .left {
+		margin-right: 0;
+		max-width: 100%;
+	}
+
+	.container .right {
+		max-width: 80%;
+	}
+
+	div#paypal-payment-button {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width:450px) {
+	.container .right h1 {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width:380px) {
+	.container .right h1 {
+		font-size: 1.5em;
+	}
+}

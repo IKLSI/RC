@@ -1,0 +1,391 @@
+/* Menu page Accueil index */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+	font-family: w;
+	src: url("../FONT/WanoQuin-ExtraBold.otf");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Popins',sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background: var(--background);
+}
+
+section {
+	width: 100%;
+	height: 100vh;
+}
+
+:root {
+	--ecriture: #f1f1f1;
+	--background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+
+/* Succession des 3 images */
+
+.Premiere {
+	background: url("https://traxxas.com/sites/default/files/news/77086-4-X-Maxx-OrangeX-Front-LtoR.jpg") no-repeat center fixed;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.Seconde {
+	background: url(../IMAGES/ARRMA.jpg) no-repeat center fixed;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.Troisieme {
+	background: url("https://www.greathobbies.com/products/t/trx/trx860864o_28.jpg") no-repeat center fixed;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Personnalisation balise textuel et a */
+
+.Titre {
+	text-align: center;
+	font-size: 30px;
+	color: var(--ecriture);
+	font-family: "Open Sans", sans-serif;
+	margin-top: 40px;
+	position: relative;
+}
+
+hr {
+	width: 30%;
+	margin: 0 auto;
+	border: 1px solid cyan;
+}
+
+.SousTitre {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 14px;
+}
+
+h4 {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+	font-family: 'Poppins',sans-serif;
+	color: var(--ecriture);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+i { cursor: pointer; }
+
+/* Personnalisation Menu */
+
+.Menu {
+	display: flex;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	padding: 1rem 3rem;
+	border-bottom: 1px solid #FFF;
+	color: #FFF;
+	background-color: #212121;
+}
+
+/* Personnalisation bande défilante */
+
+.Menu .Action {
+	position: absolute;
+	bottom: 0;
+	width: 50px;
+	height: 2px;
+	background: linear-gradient(90deg , transparent , #FFF);
+	animation: animate 5s infinite linear;
+}
+
+@keyframes animate {
+	0% {
+		left: 0;
+		transform: translate(-100%);
+	}
+
+	100% {
+		left: 100%;
+		transform: translate(0%);
+	}
+}
+
+/* Personnalisation contenu du menu */
+
+.Logo {
+	text-transform: capitalize;
+	font-family: w;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.Contenu {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	list-style: none;
+}
+
+.btn { display: none; }
+
+nav ul li a { position: relative; }
+
+nav ul .Actif a::before {
+	content: attr(data-text);
+	position: absolute;
+	width: 0;
+	border-bottom: 2px solid cyan;
+	overflow: hidden;
+	color: transparent;
+	transition: 1s;
+}
+
+nav ul li a:hover::before { width: 100%; }
+
+li { list-style: none; }
+
+.Icone { margin-left: 150px; }
+
+#userEmail {
+	font-size: 11px;
+	margin-left: -40%;
+}
+
+/* Personnalisation du bouton mode */
+
+input[type="checkbox"] {
+	display: none;
+	visibility: hidden;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.check {
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	background: black;
+	transition: ease-in 0.5s;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ .check {
+	background: #fff;
+	box-shadow: 0 0 0 12px #212121;
+}
+
+.check::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 0 0 0 #212121;
+	transition: ease-in 0.5s;
+}
+
+input[type="checkbox"]:checked ~ .check::before {
+	transform: translateX(-50px);
+}
+
+.check::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #212121;
+	box-shadow: 0 0 0 0 #212121;
+	transition: ease-in 0.5s;
+	transform: translateX(50px);
+}
+
+input[type="checkbox"]:checked ~ .check::after {
+	transform: translateX(0px);
+}
+
+/* Personnalisation des 3 cartes */
+
+.cartes-container,
+.cartes-container2 {
+	display: flex;
+	justify-content: center;
+}
+
+.cartes-container2 .carte {
+	background-color: var(--ecriture);
+}
+
+.cartes-container2 .carte p, .cartes-container2 .carte h5 {
+	color: var(--background);
+}
+
+.carte {
+	width: 350px;
+	height: 480px;
+	margin: 30px;
+	text-align: left;
+	background: #fff;
+	box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+	background-color: grey;
+}
+
+.carte:hover {
+	box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+.carte h5 {
+	margin: 0;
+	padding: 20px;
+	font-family: poppins;
+	font-size: 20px;
+	font-weight: 600;
+	color: #212121;
+}
+
+.carte p {
+	margin: 0;
+	padding: 0 20px 20px;
+	font-family: poppins;
+	font-size: 14px;
+	font-weight: 400;
+	color: #212121;
+}
+
+.carte i {
+	margin: 0;
+	padding: 0 20px 20px;
+	font-size: 20px;
+	font-weight: 200;
+	color: #212121;
+}
+
+.carte img {
+	max-height: 400px;
+	max-width: 350px;
+}
+
+/* Personnalisation pied de page */
+
+footer {
+	padding: 20px;
+	text-align: center;
+	color: var(--ecriture);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+	margin-top: 2%;
+}
+
+.contenu_Footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footer_Section {
+	flex: 1;
+	margin: 0 40px;
+	max-width: 300px;
+}
+
+.footer_Section h3 {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid cyan;
+	font-size: 16px;
+}
+
+.footer_Section p {
+	font-size: 14px;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	list-style: none;
+}
+
+.social-icons li {
+	margin: 0 10px;
+}
+
+.social-icons img {
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.social-icons .Linkedin {
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 20%;
+}
+
+.footer_Section p,
+.social-icons a {
+	color: #fff;
+}
+
+.footer_Section a:hover {
+	opacity: 0.7;
+}
+
+/* Media Screen */
+
+@media screen and (max-width:1300px) {
+	.Premiere {
+		background: url("../IMAGES/Mojave.jpg") no-repeat center fixed;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.Seconde {
+		width: 100%;
+		background: url("https://cdn.shopify.com/s/files/1/0036/2115/8947/products/ARA5210_1024x.jpg?v=1622725510") no-repeat center fixed;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.Troisieme {
+		width: 0;
+		height: 0;
+		background-image: none;
+	}
+}
