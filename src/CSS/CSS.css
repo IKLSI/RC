@@ -27,10 +27,6 @@
 	--background: #141414;
 }
 
-::-webkit-scrollbar-thumb {
-	background-color: transparent;
-}
-
 /* Initialisation header | body | html*/
 
 header { height: 150px; }

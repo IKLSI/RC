@@ -8,7 +8,6 @@
 }
 
 * {
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	font-family: 'Popins',sans-serif;
@@ -42,18 +41,14 @@ section {
 	background: url("https://traxxas.com/sites/default/files/news/77086-4-X-Maxx-OrangeX-Front-LtoR.jpg") no-repeat center fixed;
 	background-attachment: fixed;
 	background-size: cover;
+	width: 110%;
 }
 
 .Seconde {
 	background: url(../IMAGES/ARRMA.jpg) no-repeat center fixed;
 	background-attachment: fixed;
 	background-size: cover;
-}
-
-.Troisieme {
-	background: url("https://www.greathobbies.com/products/t/trx/trx860864o_28.jpg") no-repeat center fixed;
-	background-attachment: fixed;
-	background-size: cover;
+	width: 110%;
 }
 
 /* Personnalisation balise textuel et a */
@@ -370,6 +365,16 @@ footer {
 /* Media Screen */
 
 @media screen and (max-width:1300px) {
+	.Menu {
+		width: 100vw;
+		padding: 3rem 3rem;
+	}
+
+	section {
+		width: 100%;
+		height: 110vh;
+	}
+	
 	.Premiere {
 		background: url("../IMAGES/Mojave.jpg") no-repeat center fixed;
 		background-attachment: fixed;
@@ -377,15 +382,12 @@ footer {
 	}
 
 	.Seconde {
-		width: 100%;
 		background: url("https://cdn.shopify.com/s/files/1/0036/2115/8947/products/ARA5210_1024x.jpg?v=1622725510") no-repeat center fixed;
 		background-attachment: fixed;
 		background-size: cover;
 	}
 
-	.Troisieme {
-		width: 0;
-		height: 0;
-		background-image: none;
+	.Contenu {
+		gap: 1rem;
 	}
 }
